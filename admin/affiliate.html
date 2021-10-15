@@ -73,8 +73,8 @@
                         Documentation Role Admin
                     </div>
                     <div class="card-body">
-                        <h3 class="text-center">Route Category</h3>
-                        <h5>Get All Category :</h5>
+                        <h3 class="text-center">Route Affiliate</h3>
+                        <h5>Get All Affiliate :</h5>
                         <!-- Table Route -->
                         <table class="table table-bordered border-secondary">
                             <thead>
@@ -87,7 +87,7 @@
                             <tbody>
                                 <tr>
                                     <td>GET</td>
-                                    <td>https://api.vocasia.pasia.id/admin/categories</td>
+                                    <td>https://api.vocasia.pasia.id/admin/affiliates</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -131,7 +131,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Get Category By Id :</h5>
+                        <h5>Get Affiliate By Id :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -143,7 +143,7 @@
                             <tbody>
                                 <tr>
                                     <td>GET</td>
-                                    <td>https://api.vocasia.pasia.id/admin/category/1</td>
+                                    <td>https://api.vocasia.pasia.id/admin/affiliate/1</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -185,7 +185,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Create Data Category :</h5>
+                        <h5>Create Data Affiliate :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -197,7 +197,7 @@
                             <tbody>
                                 <tr>
                                     <td>POST</td>
-                                    <td>https://api.vocasia.pasia.id/admin/category-add</td>
+                                    <td>https://api.vocasia.pasia.id/admin/affiliate</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -222,18 +222,16 @@
                                             <td>
                                                 <p>{</p>
                                                 <p class="px-5">
-                                                    <label class="text-danger">"code_category"</label> : <label
-                                                        class="text-primary">"7861561"</label>,<br>
-                                                    <label class="text-danger">"name_category"</label> : <label
-                                                        class="text-primary">"Web Programming"</label>,<br>
-                                                    <label class="text-danger">"parent_category"</label> : <label
-                                                        class="text-primary">"Desain & Editor"</label>,<br>
-                                                    <label class="text-danger">"slug_category"</label> : <label
-                                                        class="text-primary">"desain-&-editor"</label>,<br>
-                                                    <label class="text-danger">"font_awesome_class"</label> : <label
-                                                        class="text-primary">"fas fa-chess"</label>,<br>
-                                                    <label class="text-danger">"thumbnail"</label> : <label
-                                                        class="text-primary">"iVBORw0KGgoAAAANSUhEUgAAAy"</label>,
+                                                    <label class="text-danger">"user_id"</label> : <label
+                                                        class="text-primary">"127"</label>,<br>
+                                                    <label class="text-danger">"leader"</label> : <label
+                                                        class="text-primary">"0"</label>,<br>
+                                                    <label class="text-danger">"co_leader"</label> : <label
+                                                        class="text-primary">"0"</label>,<br>
+                                                    <label class="text-danger">"code_reff"</label> : <label
+                                                        class="text-primary">"COBO2"</label>,<br>
+                                                    <label class="text-danger">"is_active"</label> : <label
+                                                        class="text-primary">"0"</label>,
                                                 </p>
                                                 <p>}</p>
                                             </td>
@@ -284,7 +282,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Update Data Category :</h5>
+                        <h5>Update Data Affiliate :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -296,7 +294,7 @@
                             <tbody>
                                 <tr>
                                     <td>PUT</td>
-                                    <td>https://api.vocasia.pasia.id/admin/category/1</td>
+                                    <td>https://api.vocasia.pasia.id/admin/affiliate/258</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -321,18 +319,16 @@
                                             <td>
                                                 <p>{</p>
                                                 <p class="px-5">
-                                                    <label class="text-danger">"code_category"</label> : <label
-                                                        class="text-primary">"7861561"</label>,<br>
-                                                    <label class="text-danger">"name_category"</label> : <label
-                                                        class="text-primary">"Web Programming"</label>,<br>
-                                                    <label class="text-danger">"parent_category"</label> : <label
-                                                        class="text-primary">"Ilmu Komputer"</label>,<br>
-                                                    <label class="text-danger">"slug_category"</label> : <label
-                                                        class="text-primary">"desain-&-editor"</label>,<br>
-                                                    <label class="text-danger">"font_awesome_class"</label> : <label
-                                                        class="text-primary">"fas fa-chess"</label>,<br>
-                                                    <label class="text-danger">"thumbnail"</label> : <label
-                                                        class="text-primary">"iVBORw0KGgoAAAANSUhEUgAAAy"</label>,
+                                                    <label class="text-danger">"user_id"</label> : <label
+                                                        class="text-primary">"127"</label>,<br>
+                                                    <label class="text-danger">"leader"</label> : <label
+                                                        class="text-primary">"0"</label>,<br>
+                                                    <label class="text-danger">"co_leader"</label> : <label
+                                                        class="text-primary">"0"</label>,<br>
+                                                    <label class="text-danger">"code_reff"</label> : <label
+                                                        class="text-primary">"COBO2"</label>,<br>
+                                                    <label class="text-danger">"is_active"</label> : <label
+                                                        class="text-primary">"1"</label>,
                                                 </p>
                                                 <p>}</p>
                                             </td>
@@ -383,7 +379,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Delete Data Category :</h5>
+                        <h5>Delete Data Affiliate :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -395,7 +391,7 @@
                             <tbody>
                                 <tr>
                                     <td>DELETE</td>
-                                    <td>https://api.vocasia.pasia.id/admin/category/1</td>
+                                    <td>https://api.vocasia.pasia.id/admin/affiliate/258</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>

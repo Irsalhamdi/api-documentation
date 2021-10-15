@@ -34,14 +34,14 @@
                             Admin
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="affiliate.html">Affiliate</a></li>
-                            <li><a class="dropdown-item" href="category.html">Category</a></li>
+                            <li><a class="dropdown-item" href="../admin/affiliate.html">Affiliate</a></li>
+                            <li><a class="dropdown-item" href="../admin/category.html">Category</a></li>
                             <li><a class="dropdown-item" href="#">Community</a></li>
                             <li><a class="dropdown-item" href="#">Course</a></li>
                             <li><a class="dropdown-item" href="#">Coupon</a></li>
                             <li><a class="dropdown-item" href="#">Enrol</a></li>
                             <li><a class="dropdown-item" href="#">Users</a></li>
-                            <li><a class="dropdown-item" href="users_mitra.html">Users Mitra</a></li>
+                            <li><a class="dropdown-item" href="../admin/users_mitra.html">Users Mitra</a></li>
                             <li><a class="dropdown-item" href="#">Revenue</a></li>
                         </ul>
                     </li>
@@ -51,9 +51,9 @@
                             Instructor
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="../instructor/dashboard_instructor.html">Dashboard
+                            <li><a class="dropdown-item" href="dashboard_instructor.html">Dashboard
                                     Instructor</a></li>
-                            <li><a class="dropdown-item" href="../instructor/lesson.html">Lesson</a></li>
+                            <li><a class="dropdown-item" href="lesson.html">Lesson</a></li>
                             <li><a class="dropdown-item" href="#">Question</a></li>
                             <li><a class="dropdown-item" href="#">Payment Balance</a></li>
                         </ul>
@@ -70,11 +70,11 @@
             <div class="col-12" style="overflow-x: auto;">
                 <div class="card">
                     <div class="card-header">
-                        Documentation Role Admin
+                        Documentation Role Instructor
                     </div>
                     <div class="card-body">
-                        <h3 class="text-center">Route Category</h3>
-                        <h5>Get All Category :</h5>
+                        <h3 class="text-center">Route Lesson</h3>
+                        <h5>Get All Lesson :</h5>
                         <!-- Table Route -->
                         <table class="table table-bordered border-secondary">
                             <thead>
@@ -87,7 +87,7 @@
                             <tbody>
                                 <tr>
                                     <td>GET</td>
-                                    <td>https://api.vocasia.pasia.id/admin/categories</td>
+                                    <td>https://api.vocasia.pasia.id/admin/lessons</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -131,7 +131,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Get Category By Id :</h5>
+                        <h5>Get Lesson By Id :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -143,7 +143,7 @@
                             <tbody>
                                 <tr>
                                     <td>GET</td>
-                                    <td>https://api.vocasia.pasia.id/admin/category/1</td>
+                                    <td>https://api.vocasia.pasia.id/admin/lesson/1</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -185,7 +185,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Create Data Category :</h5>
+                        <h5>Create Data Lesson :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -197,7 +197,7 @@
                             <tbody>
                                 <tr>
                                     <td>POST</td>
-                                    <td>https://api.vocasia.pasia.id/admin/category-add</td>
+                                    <td>https://api.vocasia.pasia.id/admin/lesson</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -222,18 +222,36 @@
                                             <td>
                                                 <p>{</p>
                                                 <p class="px-5">
-                                                    <label class="text-danger">"code_category"</label> : <label
-                                                        class="text-primary">"7861561"</label>,<br>
-                                                    <label class="text-danger">"name_category"</label> : <label
+                                                    <label class="text-danger">"title"</label> : <label
                                                         class="text-primary">"Web Programming"</label>,<br>
-                                                    <label class="text-danger">"parent_category"</label> : <label
-                                                        class="text-primary">"Desain & Editor"</label>,<br>
-                                                    <label class="text-danger">"slug_category"</label> : <label
-                                                        class="text-primary">"desain-&-editor"</label>,<br>
-                                                    <label class="text-danger">"font_awesome_class"</label> : <label
-                                                        class="text-primary">"fas fa-chess"</label>,<br>
-                                                    <label class="text-danger">"thumbnail"</label> : <label
-                                                        class="text-primary">"iVBORw0KGgoAAAANSUhEUgAAAy"</label>,
+                                                    <label class="text-danger">"duration"</label> : <label
+                                                        class="text-primary">"long"</label>,<br>
+                                                    <label class="text-danger">"course_id"</label> : <label
+                                                        class="text-primary">"212"</label>,<br>
+                                                    <label class="text-danger">"section_id"</label> : <label
+                                                        class="text-primary">"5"</label>,<br>
+                                                    <label class="text-danger">"video_type"</label> : <label
+                                                        class="text-primary">"Ilmu Komputer"</label>,<br>
+                                                    <label class="text-danger">"video_url"</label> : <label
+                                                        class="text-primary">"web-programing.com"</label>,<br>
+                                                    <label class="text-danger">"lesson_type"</label> : <label
+                                                        class="text-primary">"lesson-type"</label>,<br>
+                                                    <label class="text-danger">"attachment"</label> : <label
+                                                        class="text-primary">"attachment"</label>,<br>
+                                                    <label class="text-danger">"attachment_type"</label> : <label
+                                                        class="text-primary">"attachment long"</label>,<br>
+                                                    <label class="text-danger">"summary"</label> : <label
+                                                        class="text-primary">"summary"</label>,<br>
+                                                    <label class="text-danger">"is_skip"</label> : <label
+                                                        class="text-primary">"8"</label>,<br>
+                                                    <label class="text-danger">"order"</label> : <label
+                                                        class="text-primary">"2"</label>,<br>
+                                                    <label class="text-danger">"video_type_for_mobile"</label> : <label
+                                                        class="text-primary">"video-type-for-mobile"</label>,<br>
+                                                    <label class="text-danger">"video_url_for_mobile"</label> : <label
+                                                        class="text-primary">"video-url-for-mobile"</label>,<br>
+                                                    <label class="text-danger">"duration_for_mobile"</label> : <label
+                                                        class="text-primary">"duration-for-mobile"</label>,
                                                 </p>
                                                 <p>}</p>
                                             </td>
@@ -284,7 +302,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Update Data Category :</h5>
+                        <h5>Update Data Lesson :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -296,7 +314,7 @@
                             <tbody>
                                 <tr>
                                     <td>PUT</td>
-                                    <td>https://api.vocasia.pasia.id/admin/category/1</td>
+                                    <td>https://api.vocasia.pasia.id/admin/lesson/5</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -321,18 +339,36 @@
                                             <td>
                                                 <p>{</p>
                                                 <p class="px-5">
-                                                    <label class="text-danger">"code_category"</label> : <label
-                                                        class="text-primary">"7861561"</label>,<br>
-                                                    <label class="text-danger">"name_category"</label> : <label
-                                                        class="text-primary">"Web Programming"</label>,<br>
-                                                    <label class="text-danger">"parent_category"</label> : <label
+                                                    <label class="text-danger">"title"</label> : <label
+                                                        class="text-primary">"Ilmu Teknologi"</label>,<br>
+                                                    <label class="text-danger">"duration"</label> : <label
+                                                        class="text-primary">"long"</label>,<br>
+                                                    <label class="text-danger">"course_id"</label> : <label
+                                                        class="text-primary">"212"</label>,<br>
+                                                    <label class="text-danger">"section_id"</label> : <label
+                                                        class="text-primary">"5"</label>,<br>
+                                                    <label class="text-danger">"video_type"</label> : <label
                                                         class="text-primary">"Ilmu Komputer"</label>,<br>
-                                                    <label class="text-danger">"slug_category"</label> : <label
-                                                        class="text-primary">"desain-&-editor"</label>,<br>
-                                                    <label class="text-danger">"font_awesome_class"</label> : <label
-                                                        class="text-primary">"fas fa-chess"</label>,<br>
-                                                    <label class="text-danger">"thumbnail"</label> : <label
-                                                        class="text-primary">"iVBORw0KGgoAAAANSUhEUgAAAy"</label>,
+                                                    <label class="text-danger">"video_url"</label> : <label
+                                                        class="text-primary">"web-programing.com"</label>,<br>
+                                                    <label class="text-danger">"lesson_type"</label> : <label
+                                                        class="text-primary">"lesson-type"</label>,<br>
+                                                    <label class="text-danger">"attachment"</label> : <label
+                                                        class="text-primary">"attachment"</label>,<br>
+                                                    <label class="text-danger">"attachment_type"</label> : <label
+                                                        class="text-primary">"attachment long"</label>,<br>
+                                                    <label class="text-danger">"summary"</label> : <label
+                                                        class="text-primary">"summary"</label>,<br>
+                                                    <label class="text-danger">"is_skip"</label> : <label
+                                                        class="text-primary">"8"</label>,<br>
+                                                    <label class="text-danger">"order"</label> : <label
+                                                        class="text-primary">"2"</label>,<br>
+                                                    <label class="text-danger">"video_type_for_mobile"</label> : <label
+                                                        class="text-primary">"video-type-for-mobile"</label>,<br>
+                                                    <label class="text-danger">"video_url_for_mobile"</label> : <label
+                                                        class="text-primary">"video-url-for-mobile"</label>,<br>
+                                                    <label class="text-danger">"duration_for_mobile"</label> : <label
+                                                        class="text-primary">"duration-for-mobile"</label>,
                                                 </p>
                                                 <p>}</p>
                                             </td>
@@ -383,7 +419,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Delete Data Category :</h5>
+                        <h5>Delete Data Lesson :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -395,7 +431,7 @@
                             <tbody>
                                 <tr>
                                     <td>DELETE</td>
-                                    <td>https://api.vocasia.pasia.id/admin/category/1</td>
+                                    <td>https://api.vocasia.pasia.id/admin/lesson/1</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
