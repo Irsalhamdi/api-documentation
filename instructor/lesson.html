@@ -35,11 +35,13 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="../admin/affiliate.html">Affiliate</a></li>
+                            <li><a class="dropdown-item" href="../admin/login&register.html">Authentication</a></li>
                             <li><a class="dropdown-item" href="../admin/category.html">Category</a></li>
-                            <li><a class="dropdown-item" href="#">Community</a></li>
-                            <li><a class="dropdown-item" href="#">Course</a></li>
+                            <li><a class="dropdown-item" href="../admin/community.html">Community</a></li>
+                            <li><a class="dropdown-item" href="../admin/course.html">Course</a></li>
                             <li><a class="dropdown-item" href="#">Coupon</a></li>
                             <li><a class="dropdown-item" href="#">Enrol</a></li>
+                            <li><a class="dropdown-item" href="../admin/lesson-admin.html">Lesson Admin</a></li>
                             <li><a class="dropdown-item" href="#">Users</a></li>
                             <li><a class="dropdown-item" href="../admin/users_mitra.html">Users Mitra</a></li>
                             <li><a class="dropdown-item" href="#">Revenue</a></li>
@@ -87,7 +89,7 @@
                             <tbody>
                                 <tr>
                                     <td>GET</td>
-                                    <td>https://api.vocasia.pasia.id/admin/lessons</td>
+                                    <td>https://api.vocasia.pasia.id/instructor/lessons</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -143,7 +145,7 @@
                             <tbody>
                                 <tr>
                                     <td>GET</td>
-                                    <td>https://api.vocasia.pasia.id/admin/lesson/1</td>
+                                    <td>https://api.vocasia.pasia.id/instructor/lesson/1</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -197,7 +199,7 @@
                             <tbody>
                                 <tr>
                                     <td>POST</td>
-                                    <td>https://api.vocasia.pasia.id/admin/lesson</td>
+                                    <td>https://api.vocasia.pasia.id/instructor/lesson</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -251,7 +253,7 @@
                                                     <label class="text-danger">"video_url_for_mobile"</label> : <label
                                                         class="text-primary">"video-url-for-mobile"</label>,<br>
                                                     <label class="text-danger">"duration_for_mobile"</label> : <label
-                                                        class="text-primary">"duration-for-mobile"</label>,
+                                                        class="text-primary">"duration-for-mobile"</label>
                                                 </p>
                                                 <p>}</p>
                                             </td>
@@ -285,11 +287,10 @@
                                                         class="text-success">201</label>,<br>
                                                     <label class="text-danger">"error"</label> : <label
                                                         class="text-primary">false</label>,<br>
-                                                    <label class="text-danger">"data"</label> : <label
-                                                        class="text-primary">[</label><br>
+                                                    <label class="text-danger">"data"</label> : <label>[</label><br>
                                                     <label class="text-danger p-3">"messages"</label> : <label
                                                         class="text-primary">"data successfull
-                                                        created"</label>,<br><label class="text-primary">]</label>
+                                                        created"</label>,<br><label>]</label>
 
                                                 </p>
                                                 <p>}</p>
@@ -314,7 +315,7 @@
                             <tbody>
                                 <tr>
                                     <td>PUT</td>
-                                    <td>https://api.vocasia.pasia.id/admin/lesson/5</td>
+                                    <td>https://api.vocasia.pasia.id/instructor/lesson/5</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -368,7 +369,7 @@
                                                     <label class="text-danger">"video_url_for_mobile"</label> : <label
                                                         class="text-primary">"video-url-for-mobile"</label>,<br>
                                                     <label class="text-danger">"duration_for_mobile"</label> : <label
-                                                        class="text-primary">"duration-for-mobile"</label>,
+                                                        class="text-primary">"duration-for-mobile"</label>
                                                 </p>
                                                 <p>}</p>
                                             </td>
@@ -402,11 +403,10 @@
                                                         class="text-success">200</label>,<br>
                                                     <label class="text-danger">"error"</label> : <label
                                                         class="text-primary">false</label>,<br>
-                                                    <label class="text-danger">"data"</label> : <label
-                                                        class="text-primary">[</label><br>
+                                                    <label class="text-danger">"data"</label> : <label>[</label><br>
                                                     <label class="text-danger p-3">"messages"</label> : <label
                                                         class="text-primary">"data successfull
-                                                        updated"</label>,<br><label class="text-primary">]</label>
+                                                        updated"</label>,<br><label>]</label>
 
                                                 </p>
                                                 <p>}</p>
@@ -431,7 +431,7 @@
                             <tbody>
                                 <tr>
                                     <td>DELETE</td>
-                                    <td>https://api.vocasia.pasia.id/admin/lesson/1</td>
+                                    <td>https://api.vocasia.pasia.id/instructor/lesson/1</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -461,11 +461,10 @@
                                                         class="text-success">200</label>,<br>
                                                     <label class="text-danger">"error"</label> : <label
                                                         class="text-primary">false</label>,<br>
-                                                    <label class="text-danger">"data"</label> : <label
-                                                        class="text-primary">[</label><br>
+                                                    <label class="text-danger">"data"</label> : <label>[</label><br>
                                                     <label class="text-danger p-3">"messages"</label> : <label
                                                         class="text-primary">"data successfull
-                                                        deleted"</label>,<br><label class="text-primary">]</label>
+                                                        deleted"</label>,<br><label>]</label>
 
                                                 </p>
                                                 <p>}</p>

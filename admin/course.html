@@ -75,8 +75,8 @@
                         Documentation Role Admin
                     </div>
                     <div class="card-body">
-                        <h3 class="text-center">Route Users Mitra</h3>
-                        <h5>Get All Users Mitra :</h5>
+                        <h3 class="text-center">Route Course</h3>
+                        <h5>Get All Course :</h5>
                         <!-- Table Route -->
                         <table class="table table-bordered border-secondary">
                             <thead>
@@ -89,7 +89,7 @@
                             <tbody>
                                 <tr>
                                     <td>GET</td>
-                                    <td>https://api.vocasia.pasia.id/admin/users-mitra</td>
+                                    <td>https://api.vocasia.pasia.id/admin/courses</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -133,7 +133,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Get Users Mitra By Id :</h5>
+                        <h5>Get Course By Id :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -145,7 +145,7 @@
                             <tbody>
                                 <tr>
                                     <td>GET</td>
-                                    <td>https://api.vocasia.pasia.id/admin/users-mitra/1</td>
+                                    <td>https://api.vocasia.pasia.id/admin/course/1</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -187,7 +187,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Create Data Users Mitra :</h5>
+                        <h5>Create Data Course :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -199,7 +199,7 @@
                             <tbody>
                                 <tr>
                                     <td>POST</td>
-                                    <td>https://api.vocasia.pasia.id/admin/users-mitra</td>
+                                    <td>https://api.vocasia.pasia.id/admin/course</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -224,16 +224,62 @@
                                             <td>
                                                 <p>{</p>
                                                 <p class="px-5">
-                                                    <label class="text-danger">"id_user"</label> : <label
-                                                        class="text-primary">"477"</label>,<br>
-                                                    <label class="text-danger">"number_code"</label> : <label
-                                                        class="text-primary">"123456"</label>,<br>
-                                                    <label class="text-danger">"collage"</label> : <label
-                                                        class="text-primary">"UNS"</label>,<br>
-                                                    <label class="text-danger">"major"</label> : <label
-                                                        class="text-primary">"Ekonomi"</label>,<br>
-                                                    <label class="text-danger">"mitra_name"</label> : <label
-                                                        class="text-primary">"SQP"</label>
+                                                    <label class="text-danger">"title"</label> : <label
+                                                        class="text-primary">"Web Programming"</label>,<br>
+                                                    <label class="text-danger">"short_description"</label> : <label
+                                                        class="text-primary">"this is
+                                                        short_description"</label>,<br>
+                                                    <label class="text-danger">"description"</label> : <label
+                                                        class="text-primary">"this is description"</label>,<br>
+                                                    <label class="text-danger">"bio_instructor"</label> : <label
+                                                        class="text-primary">"this is bio instructor"</label>,<br>
+                                                    <label class="text-danger">"bio_status"</label> : <label
+                                                        class="text-primary">"1"</label>,<br>
+                                                    <label class="text-danger">"outcomes"</label> : <label
+                                                        class="text-primary">"this is outcomes"</label>,<br>
+                                                    <label class="text-danger">"language"</label> : <label
+                                                        class="text-primary">"english"</label>,<br>
+                                                    <label class="text-danger">"category_id"</label> : <label
+                                                        class="text-primary">"22"</label>,<br>
+                                                    <label class="text-danger">"sub_category_id"</label> : <label
+                                                        class="text-primary">"5"</label>,<br>
+                                                    <label class="text-danger">"section"</label> : <label
+                                                        class="text-primary">"this section"</label>,<br>
+                                                    <label class="text-danger">"requirement"</label> : <label
+                                                        class="text-primary">"this is requirement"</label>,<br>
+                                                    <label class="text-danger">"price"</label> : <label
+                                                        class="text-primary">"20000"</label>,<br>
+                                                    <label class="text-danger">"discount_flag"</label> : <label
+                                                        class="text-primary">"10"</label>,<br>
+                                                    <label class="text-danger">"discount_price"</label> : <label
+                                                        class="text-primary">"10"</label>,<br>
+                                                    <label class="text-danger">"level_course"</label> : <label
+                                                        class="text-primary">"high"</label>,<br>
+                                                    <label class="text-danger">"user_id"</label> : <label
+                                                        class="text-primary">"2"</label>,<br>
+                                                    <label class="text-danger">"thumbnail"</label> : <label
+                                                        class="text-primary">"this is thimbnail"</label>,<br>
+                                                    <label class="text-danger">"visibility"</label> : <label
+                                                        class="text-primary">"this is visibility"</label>,<br>
+                                                    <label class="text-danger">"is_top_course"</label> : <label
+                                                        class="text-primary">"this top course"</label>,<br>
+                                                    <label class="text-danger">"is_admin"</label> : <label
+                                                        class="text-primary">"1"</label>,<br>
+                                                    <label class="text-danger">"status_course"</label> : <label
+                                                        class="text-primary">"long"</label>,<br>
+                                                    <label class="text-danger">"course_overview_provider"</label> :
+                                                    <label class="text-primary">"overview provider"</label>,<br>
+                                                    <label class="text-danger">"meta_keyword"</label> : <label
+                                                        class="text-primary">"this is meta keyword"</label>,<br>
+                                                    <label class="text-danger">"meta_description"</label> : <label
+                                                        class="text-primary">"this is meta
+                                                        description"</label>,<br>
+                                                    <label class="text-danger">"is_free_course"</label> : <label
+                                                        class="text-primary">"1"</label>,<br>
+                                                    <label class="text-danger">"is_prakerja"</label> : <label
+                                                        class="text-primary">"0"</label>,<br>
+                                                    <label class="text-danger">"instructor_revenue"</label> : <label
+                                                        class="text-primary">"1"</label>
                                                 </p>
                                                 <p>}</p>
                                             </td>
@@ -283,7 +329,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Update Data Users Mitra :</h5>
+                        <h5>Update Data Course :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -295,7 +341,7 @@
                             <tbody>
                                 <tr>
                                     <td>PUT</td>
-                                    <td>https://api.vocasia.pasia.id/admin/users-mitra/1</td>
+                                    <td>https://api.vocasia.pasia.id/admin/course/258</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -320,16 +366,62 @@
                                             <td>
                                                 <p>{</p>
                                                 <p class="px-5">
-                                                    <label class="text-danger">"id_user"</label> : <label
-                                                        class="text-primary">"477"</label>,<br>
-                                                    <label class="text-danger">"number_code"</label> : <label
-                                                        class="text-primary">"123456"</label>,<br>
-                                                    <label class="text-danger">"collage"</label> : <label
-                                                        class="text-primary">"UNS"</label>,<br>
-                                                    <label class="text-danger">"major"</label> : <label
-                                                        class="text-primary">"Ekonomi Syariah"</label>,<br>
-                                                    <label class="text-danger">"mitra_name"</label> : <label
-                                                        class="text-primary">"SQP"</label>
+                                                    <label class="text-danger">"title"</label> : <label
+                                                        class="text-primary">"learn Web Programming"</label>,<br>
+                                                    <label class="text-danger">"short_description"</label> : <label
+                                                        class="text-primary">"this is
+                                                        short_description"</label>,<br>
+                                                    <label class="text-danger">"description"</label> : <label
+                                                        class="text-primary">"this is description"</label>,<br>
+                                                    <label class="text-danger">"bio_instructor"</label> : <label
+                                                        class="text-primary">"this is bio instructor"</label>,<br>
+                                                    <label class="text-danger">"bio_status"</label> : <label
+                                                        class="text-primary">"1"</label>,<br>
+                                                    <label class="text-danger">"outcomes"</label> : <label
+                                                        class="text-primary">"this is outcomes"</label>,<br>
+                                                    <label class="text-danger">"language"</label> : <label
+                                                        class="text-primary">"english"</label>,<br>
+                                                    <label class="text-danger">"category_id"</label> : <label
+                                                        class="text-primary">"22"</label>,<br>
+                                                    <label class="text-danger">"sub_category_id"</label> : <label
+                                                        class="text-primary">"5"</label>,<br>
+                                                    <label class="text-danger">"section"</label> : <label
+                                                        class="text-primary">"this section"</label>,<br>
+                                                    <label class="text-danger">"requirement"</label> : <label
+                                                        class="text-primary">"this is requirement"</label>,<br>
+                                                    <label class="text-danger">"price"</label> : <label
+                                                        class="text-primary">"20000"</label>,<br>
+                                                    <label class="text-danger">"discount_flag"</label> : <label
+                                                        class="text-primary">"10"</label>,<br>
+                                                    <label class="text-danger">"discount_price"</label> : <label
+                                                        class="text-primary">"10"</label>,<br>
+                                                    <label class="text-danger">"level_course"</label> : <label
+                                                        class="text-primary">"high"</label>,<br>
+                                                    <label class="text-danger">"user_id"</label> : <label
+                                                        class="text-primary">"2"</label>,<br>
+                                                    <label class="text-danger">"thumbnail"</label> : <label
+                                                        class="text-primary">"this is thimbnail"</label>,<br>
+                                                    <label class="text-danger">"visibility"</label> : <label
+                                                        class="text-primary">"this is visibility"</label>,<br>
+                                                    <label class="text-danger">"is_top_course"</label> : <label
+                                                        class="text-primary">"this top course"</label>,<br>
+                                                    <label class="text-danger">"is_admin"</label> : <label
+                                                        class="text-primary">"1"</label>,<br>
+                                                    <label class="text-danger">"status_course"</label> : <label
+                                                        class="text-primary">"long"</label>,<br>
+                                                    <label class="text-danger">"course_overview_provider"</label> :
+                                                    <label class="text-primary">"overview provider"</label>,<br>
+                                                    <label class="text-danger">"meta_keyword"</label> : <label
+                                                        class="text-primary">"this is meta keyword"</label>,<br>
+                                                    <label class="text-danger">"meta_description"</label> : <label
+                                                        class="text-primary">"this is meta
+                                                        description"</label>,<br>
+                                                    <label class="text-danger">"is_free_course"</label> : <label
+                                                        class="text-primary">"1"</label>,<br>
+                                                    <label class="text-danger">"is_prakerja"</label> : <label
+                                                        class="text-primary">"0"</label>,<br>
+                                                    <label class="text-danger">"instructor_revenue"</label> : <label
+                                                        class="text-primary">"1"</label>
                                                 </p>
                                                 <p>}</p>
                                             </td>
@@ -379,7 +471,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Delete Data Users Mitra :</h5>
+                        <h5>Delete Data Course :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -391,7 +483,7 @@
                             <tbody>
                                 <tr>
                                     <td>DELETE</td>
-                                    <td>https://api.vocasia.pasia.id/admin/users-mitra/1</td>
+                                    <td>https://api.vocasia.pasia.id/admin/course/258</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>

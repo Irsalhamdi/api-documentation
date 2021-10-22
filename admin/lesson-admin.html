@@ -34,16 +34,16 @@
                             Admin
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="affiliate.html">Affiliate</a></li>
+                            <li><a class="dropdown-item" href="../admin/affiliate.html">Affiliate</a></li>
                             <li><a class="dropdown-item" href="login&register.html">Authentication</a></li>
-                            <li><a class="dropdown-item" href="category.html">Category</a></li>
-                            <li><a class="dropdown-item" href="community.html">Community</a></li>
-                            <li><a class="dropdown-item" href="course.html">Course</a></li>
+                            <li><a class="dropdown-item" href="../admin/category.html">Category</a></li>
+                            <li><a class="dropdown-item" href="../admin/community.html">Community</a></li>
+                            <li><a class="dropdown-item" href="../admin/course.html">Course</a></li>
                             <li><a class="dropdown-item" href="#">Coupon</a></li>
                             <li><a class="dropdown-item" href="#">Enrol</a></li>
                             <li><a class="dropdown-item" href="lesson-admin.html">Lesson Admin</a></li>
                             <li><a class="dropdown-item" href="#">Users</a></li>
-                            <li><a class="dropdown-item" href="users_mitra.html">Users Mitra</a></li>
+                            <li><a class="dropdown-item" href="../admin/users_mitra.html">Users Mitra</a></li>
                             <li><a class="dropdown-item" href="#">Revenue</a></li>
                         </ul>
                     </li>
@@ -53,9 +53,9 @@
                             Instructor
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="../instructor/dashboard_instructor.html">Dashboard
+                            <li><a class="dropdown-item" href="dashboard_instructor.html">Dashboard
                                     Instructor</a></li>
-                            <li><a class="dropdown-item" href="../instructor/lesson.html">Lesson</a></li>
+                            <li><a class="dropdown-item" href="lesson.html">Lesson</a></li>
                             <li><a class="dropdown-item" href="#">Question</a></li>
                             <li><a class="dropdown-item" href="#">Payment Balance</a></li>
                         </ul>
@@ -75,8 +75,8 @@
                         Documentation Role Admin
                     </div>
                     <div class="card-body">
-                        <h3 class="text-center">Route Users Mitra</h3>
-                        <h5>Get All Users Mitra :</h5>
+                        <h3 class="text-center">Route Lesson Admin</h3>
+                        <h5>Get All Lesson Admin :</h5>
                         <!-- Table Route -->
                         <table class="table table-bordered border-secondary">
                             <thead>
@@ -89,7 +89,7 @@
                             <tbody>
                                 <tr>
                                     <td>GET</td>
-                                    <td>https://api.vocasia.pasia.id/admin/users-mitra</td>
+                                    <td>https://api.vocasia.pasia.id/admin/lessons-admin</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -133,7 +133,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Get Users Mitra By Id :</h5>
+                        <h5>Get Lesson Admin By Id :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -145,7 +145,7 @@
                             <tbody>
                                 <tr>
                                     <td>GET</td>
-                                    <td>https://api.vocasia.pasia.id/admin/users-mitra/1</td>
+                                    <td>https://api.vocasia.pasia.id/admin/lesson-admin/1</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -187,7 +187,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Create Data Users Mitra :</h5>
+                        <h5>Create Data Lesson Admin :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -199,7 +199,7 @@
                             <tbody>
                                 <tr>
                                     <td>POST</td>
-                                    <td>https://api.vocasia.pasia.id/admin/users-mitra</td>
+                                    <td>https://api.vocasia.pasia.id/admin-admin/lesson</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -224,16 +224,36 @@
                                             <td>
                                                 <p>{</p>
                                                 <p class="px-5">
-                                                    <label class="text-danger">"id_user"</label> : <label
-                                                        class="text-primary">"477"</label>,<br>
-                                                    <label class="text-danger">"number_code"</label> : <label
-                                                        class="text-primary">"123456"</label>,<br>
-                                                    <label class="text-danger">"collage"</label> : <label
-                                                        class="text-primary">"UNS"</label>,<br>
-                                                    <label class="text-danger">"major"</label> : <label
-                                                        class="text-primary">"Ekonomi"</label>,<br>
-                                                    <label class="text-danger">"mitra_name"</label> : <label
-                                                        class="text-primary">"SQP"</label>
+                                                    <label class="text-danger">"title"</label> : <label
+                                                        class="text-primary">"Web Programming"</label>,<br>
+                                                    <label class="text-danger">"duration"</label> : <label
+                                                        class="text-primary">"long"</label>,<br>
+                                                    <label class="text-danger">"course_id"</label> : <label
+                                                        class="text-primary">"212"</label>,<br>
+                                                    <label class="text-danger">"section_id"</label> : <label
+                                                        class="text-primary">"5"</label>,<br>
+                                                    <label class="text-danger">"video_type"</label> : <label
+                                                        class="text-primary">"Ilmu Komputer"</label>,<br>
+                                                    <label class="text-danger">"video_url"</label> : <label
+                                                        class="text-primary">"web-programing.com"</label>,<br>
+                                                    <label class="text-danger">"lesson_type"</label> : <label
+                                                        class="text-primary">"lesson-type"</label>,<br>
+                                                    <label class="text-danger">"attachment"</label> : <label
+                                                        class="text-primary">"attachment"</label>,<br>
+                                                    <label class="text-danger">"attachment_type"</label> : <label
+                                                        class="text-primary">"attachment long"</label>,<br>
+                                                    <label class="text-danger">"summary"</label> : <label
+                                                        class="text-primary">"summary"</label>,<br>
+                                                    <label class="text-danger">"is_skip"</label> : <label
+                                                        class="text-primary">"8"</label>,<br>
+                                                    <label class="text-danger">"order"</label> : <label
+                                                        class="text-primary">"2"</label>,<br>
+                                                    <label class="text-danger">"video_type_for_mobile"</label> : <label
+                                                        class="text-primary">"video-type-for-mobile"</label>,<br>
+                                                    <label class="text-danger">"video_url_for_mobile"</label> : <label
+                                                        class="text-primary">"video-url-for-mobile"</label>,<br>
+                                                    <label class="text-danger">"duration_for_mobile"</label> : <label
+                                                        class="text-primary">"duration-for-mobile"</label>
                                                 </p>
                                                 <p>}</p>
                                             </td>
@@ -283,7 +303,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Update Data Users Mitra :</h5>
+                        <h5>Update Data Lesson Admin :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -295,7 +315,7 @@
                             <tbody>
                                 <tr>
                                     <td>PUT</td>
-                                    <td>https://api.vocasia.pasia.id/admin/users-mitra/1</td>
+                                    <td>https://api.vocasia.pasia.id/admin/lesson-admin/5</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -320,16 +340,36 @@
                                             <td>
                                                 <p>{</p>
                                                 <p class="px-5">
-                                                    <label class="text-danger">"id_user"</label> : <label
-                                                        class="text-primary">"477"</label>,<br>
-                                                    <label class="text-danger">"number_code"</label> : <label
-                                                        class="text-primary">"123456"</label>,<br>
-                                                    <label class="text-danger">"collage"</label> : <label
-                                                        class="text-primary">"UNS"</label>,<br>
-                                                    <label class="text-danger">"major"</label> : <label
-                                                        class="text-primary">"Ekonomi Syariah"</label>,<br>
-                                                    <label class="text-danger">"mitra_name"</label> : <label
-                                                        class="text-primary">"SQP"</label>
+                                                    <label class="text-danger">"title"</label> : <label
+                                                        class="text-primary">"Ilmu Teknologi"</label>,<br>
+                                                    <label class="text-danger">"duration"</label> : <label
+                                                        class="text-primary">"long"</label>,<br>
+                                                    <label class="text-danger">"course_id"</label> : <label
+                                                        class="text-primary">"212"</label>,<br>
+                                                    <label class="text-danger">"section_id"</label> : <label
+                                                        class="text-primary">"5"</label>,<br>
+                                                    <label class="text-danger">"video_type"</label> : <label
+                                                        class="text-primary">"Ilmu Komputer"</label>,<br>
+                                                    <label class="text-danger">"video_url"</label> : <label
+                                                        class="text-primary">"web-programing.com"</label>,<br>
+                                                    <label class="text-danger">"lesson_type"</label> : <label
+                                                        class="text-primary">"lesson-type"</label>,<br>
+                                                    <label class="text-danger">"attachment"</label> : <label
+                                                        class="text-primary">"attachment"</label>,<br>
+                                                    <label class="text-danger">"attachment_type"</label> : <label
+                                                        class="text-primary">"attachment long"</label>,<br>
+                                                    <label class="text-danger">"summary"</label> : <label
+                                                        class="text-primary">"summary"</label>,<br>
+                                                    <label class="text-danger">"is_skip"</label> : <label
+                                                        class="text-primary">"8"</label>,<br>
+                                                    <label class="text-danger">"order"</label> : <label
+                                                        class="text-primary">"2"</label>,<br>
+                                                    <label class="text-danger">"video_type_for_mobile"</label> : <label
+                                                        class="text-primary">"video-type-for-mobile"</label>,<br>
+                                                    <label class="text-danger">"video_url_for_mobile"</label> : <label
+                                                        class="text-primary">"video-url-for-mobile"</label>,<br>
+                                                    <label class="text-danger">"duration_for_mobile"</label> : <label
+                                                        class="text-primary">"duration-for-mobile"</label>
                                                 </p>
                                                 <p>}</p>
                                             </td>
@@ -379,7 +419,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Delete Data Users Mitra :</h5>
+                        <h5>Delete Data Lesson Admin :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -391,7 +431,7 @@
                             <tbody>
                                 <tr>
                                     <td>DELETE</td>
-                                    <td>https://api.vocasia.pasia.id/admin/users-mitra/1</td>
+                                    <td>https://api.vocasia.pasia.id/admin/lesson-admin/1</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
