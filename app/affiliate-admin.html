@@ -11,72 +11,12 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Title -->
     <title>Vocasia Project Api</title>
+    <script type=module src=../assets/main.js></script>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Vocasia Project Api</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Admin
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="../admin/affiliate.html">Affiliate</a></li>
-                            <li><a class="dropdown-item" href="../admin/login&register.html">Authentication</a></li>
-                            <li><a class="dropdown-item" href="../admin/category.html">Category</a></li>
-                            <li><a class="dropdown-item" href="../admin/community.html">Community</a></li>
-                            <li><a class="dropdown-item" href="../admin/course.html">Course</a></li>
-                            <li><a class="dropdown-item" href="#">Coupon</a></li>
-                            <li><a class="dropdown-item" href="#">Enrol</a></li>
-                            <li><a class="dropdown-item" href="../admin/lesson-admin.html">Lesson Admin</a></li>
-                            <li><a class="dropdown-item" href="#">Users</a></li>
-                            <li><a class="dropdown-item" href="../admin/users_mitra.html">Users Mitra</a></li>
-                            <li><a class="dropdown-item" href="#">Revenue</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Instructor
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="dashboard_instructor.html">Dashboard
-                                    Instructor</a></li>
-                            <li><a class="dropdown-item" href="home_page.html">Home Page</a></li>
-                            <li><a class="dropdown-item" href="lesson.html">Lesson</a></li>
-                            <li><a class="dropdown-item" href="#">Question</a></li>
-                            <li><a class="dropdown-item" href="#">Payment Balance</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Users
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="../users/users.html">Users Profil</a>
-                            <li><a class="dropdown-item" href="../users/affiliate.html">Users Afiliate</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- End Navbar -->
+
+    <my-navbar></my-navbar>
 
     <!-- Card page -->
     <div class="container" style="padding-top: 4rem;">
@@ -84,11 +24,11 @@
             <div class="col-12" style="overflow-x: auto;">
                 <div class="card">
                     <div class="card-header">
-                        Documentation Role Instructor
+                        Documentation Role Admin
                     </div>
                     <div class="card-body">
-                        <h3 class="text-center">Route Lesson</h3>
-                        <h5>Get All Lesson :</h5>
+                        <h3 class="text-center">Route Affiliate</h3>
+                        <h5>Get All Affiliate :</h5>
                         <!-- Table Route -->
                         <table class="table table-bordered border-secondary">
                             <thead>
@@ -101,7 +41,7 @@
                             <tbody>
                                 <tr>
                                     <td>GET</td>
-                                    <td>https://api.vocasia.pasia.id/instructor/lessons</td>
+                                    <td>https://api.vocasia.pasia.id/admin/affiliates</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -145,7 +85,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Get Lesson By Id :</h5>
+                        <h5>Get Affiliate By Id :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -157,7 +97,7 @@
                             <tbody>
                                 <tr>
                                     <td>GET</td>
-                                    <td>https://api.vocasia.pasia.id/instructor/lesson/1</td>
+                                    <td>https://api.vocasia.pasia.id/admin/affiliate/1</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -199,7 +139,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Create Data Lesson :</h5>
+                        <h5>Create Data Affiliate :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -211,7 +151,7 @@
                             <tbody>
                                 <tr>
                                     <td>POST</td>
-                                    <td>https://api.vocasia.pasia.id/instructor/lesson</td>
+                                    <td>https://api.vocasia.pasia.id/admin/affiliate</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -236,36 +176,16 @@
                                             <td>
                                                 <p>{</p>
                                                 <p class="px-5">
-                                                    <label class="text-danger">"title"</label> : <label
-                                                        class="text-primary">"Web Programming"</label>,<br>
-                                                    <label class="text-danger">"duration"</label> : <label
-                                                        class="text-primary">"long"</label>,<br>
-                                                    <label class="text-danger">"course_id"</label> : <label
-                                                        class="text-primary">"212"</label>,<br>
-                                                    <label class="text-danger">"section_id"</label> : <label
-                                                        class="text-primary">"5"</label>,<br>
-                                                    <label class="text-danger">"video_type"</label> : <label
-                                                        class="text-primary">"Ilmu Komputer"</label>,<br>
-                                                    <label class="text-danger">"video_url"</label> : <label
-                                                        class="text-primary">"web-programing.com"</label>,<br>
-                                                    <label class="text-danger">"lesson_type"</label> : <label
-                                                        class="text-primary">"lesson-type"</label>,<br>
-                                                    <label class="text-danger">"attachment"</label> : <label
-                                                        class="text-primary">"attachment"</label>,<br>
-                                                    <label class="text-danger">"attachment_type"</label> : <label
-                                                        class="text-primary">"attachment long"</label>,<br>
-                                                    <label class="text-danger">"summary"</label> : <label
-                                                        class="text-primary">"summary"</label>,<br>
-                                                    <label class="text-danger">"is_skip"</label> : <label
-                                                        class="text-primary">"8"</label>,<br>
-                                                    <label class="text-danger">"order"</label> : <label
-                                                        class="text-primary">"2"</label>,<br>
-                                                    <label class="text-danger">"video_type_for_mobile"</label> : <label
-                                                        class="text-primary">"video-type-for-mobile"</label>,<br>
-                                                    <label class="text-danger">"video_url_for_mobile"</label> : <label
-                                                        class="text-primary">"video-url-for-mobile"</label>,<br>
-                                                    <label class="text-danger">"duration_for_mobile"</label> : <label
-                                                        class="text-primary">"duration-for-mobile"</label>
+                                                    <label class="text-danger">"user_id"</label> : <label
+                                                        class="text-primary">"127"</label>,<br>
+                                                    <label class="text-danger">"leader"</label> : <label
+                                                        class="text-primary">"0"</label>,<br>
+                                                    <label class="text-danger">"co_leader"</label> : <label
+                                                        class="text-primary">"0"</label>,<br>
+                                                    <label class="text-danger">"code_reff"</label> : <label
+                                                        class="text-primary">"COBO2"</label>,<br>
+                                                    <label class="text-danger">"is_active"</label> : <label
+                                                        class="text-primary">"0"</label>
                                                 </p>
                                                 <p>}</p>
                                             </td>
@@ -315,7 +235,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Update Data Lesson :</h5>
+                        <h5>Update Data Affiliate :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -327,7 +247,7 @@
                             <tbody>
                                 <tr>
                                     <td>PUT</td>
-                                    <td>https://api.vocasia.pasia.id/instructor/lesson/5</td>
+                                    <td>https://api.vocasia.pasia.id/admin/affiliate/258</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -352,36 +272,16 @@
                                             <td>
                                                 <p>{</p>
                                                 <p class="px-5">
-                                                    <label class="text-danger">"title"</label> : <label
-                                                        class="text-primary">"Ilmu Teknologi"</label>,<br>
-                                                    <label class="text-danger">"duration"</label> : <label
-                                                        class="text-primary">"long"</label>,<br>
-                                                    <label class="text-danger">"course_id"</label> : <label
-                                                        class="text-primary">"212"</label>,<br>
-                                                    <label class="text-danger">"section_id"</label> : <label
-                                                        class="text-primary">"5"</label>,<br>
-                                                    <label class="text-danger">"video_type"</label> : <label
-                                                        class="text-primary">"Ilmu Komputer"</label>,<br>
-                                                    <label class="text-danger">"video_url"</label> : <label
-                                                        class="text-primary">"web-programing.com"</label>,<br>
-                                                    <label class="text-danger">"lesson_type"</label> : <label
-                                                        class="text-primary">"lesson-type"</label>,<br>
-                                                    <label class="text-danger">"attachment"</label> : <label
-                                                        class="text-primary">"attachment"</label>,<br>
-                                                    <label class="text-danger">"attachment_type"</label> : <label
-                                                        class="text-primary">"attachment long"</label>,<br>
-                                                    <label class="text-danger">"summary"</label> : <label
-                                                        class="text-primary">"summary"</label>,<br>
-                                                    <label class="text-danger">"is_skip"</label> : <label
-                                                        class="text-primary">"8"</label>,<br>
-                                                    <label class="text-danger">"order"</label> : <label
-                                                        class="text-primary">"2"</label>,<br>
-                                                    <label class="text-danger">"video_type_for_mobile"</label> : <label
-                                                        class="text-primary">"video-type-for-mobile"</label>,<br>
-                                                    <label class="text-danger">"video_url_for_mobile"</label> : <label
-                                                        class="text-primary">"video-url-for-mobile"</label>,<br>
-                                                    <label class="text-danger">"duration_for_mobile"</label> : <label
-                                                        class="text-primary">"duration-for-mobile"</label>
+                                                    <label class="text-danger">"user_id"</label> : <label
+                                                        class="text-primary">"127"</label>,<br>
+                                                    <label class="text-danger">"leader"</label> : <label
+                                                        class="text-primary">"0"</label>,<br>
+                                                    <label class="text-danger">"co_leader"</label> : <label
+                                                        class="text-primary">"0"</label>,<br>
+                                                    <label class="text-danger">"code_reff"</label> : <label
+                                                        class="text-primary">"COBO2"</label>,<br>
+                                                    <label class="text-danger">"is_active"</label> : <label
+                                                        class="text-primary">"1"</label>
                                                 </p>
                                                 <p>}</p>
                                             </td>
@@ -431,7 +331,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Delete Data Lesson :</h5>
+                        <h5>Delete Data Affiliate :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -443,7 +343,7 @@
                             <tbody>
                                 <tr>
                                     <td>DELETE</td>
-                                    <td>https://api.vocasia.pasia.id/instructor/lesson/1</td>
+                                    <td>https://api.vocasia.pasia.id/admin/affiliate/258</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -492,11 +392,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="card-footer text-center">
-            Documentation Vocasia Project Api | 2021
-        </div>
-    </div>
+    <my-footer></my-footer>
     <!-- End Card page -->
 
     <!-- Optional JavaScript; choose one of the two! -->

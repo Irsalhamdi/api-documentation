@@ -11,72 +11,12 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Title -->
     <title>Vocasia Project Api</title>
+    <script type=module src=../assets/main.js></script>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Vocasia Project Api</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Admin
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="../admin/affiliate.html">Affiliate</a></li>
-                            <li><a class="dropdown-item" href="../admin/login&register.html">Authentication</a></li>
-                            <li><a class="dropdown-item" href="../admin/category.html">Category</a></li>
-                            <li><a class="dropdown-item" href="../admin/community.html">Community</a></li>
-                            <li><a class="dropdown-item" href="../admin/course.html">Course</a></li>
-                            <li><a class="dropdown-item" href="#">Coupon</a></li>
-                            <li><a class="dropdown-item" href="#">Enrol</a></li>
-                            <li><a class="dropdown-item" href="../admin/lesson-admin.html">Lesson Admin</a></li>
-                            <li><a class="dropdown-item" href="#">Users</a></li>
-                            <li><a class="dropdown-item" href="../admin/users_mitra.html">Users Mitra</a></li>
-                            <li><a class="dropdown-item" href="#">Revenue</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Instructor
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="dashboard_instructor.html">Dashboard
-                                    Instructor</a></li>
-                            <li><a class="dropdown-item" href="home_page.html">Home Page</a></li>
-                            <li><a class="dropdown-item" href="lesson.html">Lesson</a></li>
-                            <li><a class="dropdown-item" href="#">Question</a></li>
-                            <li><a class="dropdown-item" href="#">Payment Balance</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Users
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="../users/users.html">Users Profil</a>
-                            <li><a class="dropdown-item" href="../users/affiliate.html">Users Afiliate</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- End Navbar -->
+
+    <my-navbar></my-navbar>
 
     <!-- Card page -->
     <div class="container" style="padding-top: 4rem;">
@@ -84,11 +24,11 @@
             <div class="col-12" style="overflow-x: auto;">
                 <div class="card">
                     <div class="card-header">
-                        Documentation Role Instructor
+                        Documentation Role Admin
                     </div>
                     <div class="card-body">
-                        <h3 class="text-center">Route Dashboard Instructor</h3>
-                        <h5>Get All Dashboard Instructor :</h5>
+                        <h3 class="text-center">Route Course</h3>
+                        <h5>Get All Course :</h5>
                         <!-- Table Route -->
                         <table class="table table-bordered border-secondary">
                             <thead>
@@ -101,7 +41,7 @@
                             <tbody>
                                 <tr>
                                     <td>GET</td>
-                                    <td>https://api.vocasia.pasia.id/instructor/dashboard-instructors</td>
+                                    <td>https://api.vocasia.pasia.id/admin/courses</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -145,7 +85,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Get Dashboard Instructor By Id :</h5>
+                        <h5>Get Course By Id :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -157,7 +97,7 @@
                             <tbody>
                                 <tr>
                                     <td>GET</td>
-                                    <td>https://api.vocasia.pasia.id/instructor/dashboard-instructor/1</td>
+                                    <td>https://api.vocasia.pasia.id/admin/course/1</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -199,7 +139,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Create Data Dashboard Instructor :</h5>
+                        <h5>Create Data Course :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -211,7 +151,7 @@
                             <tbody>
                                 <tr>
                                     <td>POST</td>
-                                    <td>https://api.vocasia.pasia.id/instructor/dashboard-instructor</td>
+                                    <td>https://api.vocasia.pasia.id/admin/course</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -239,7 +179,8 @@
                                                     <label class="text-danger">"title"</label> : <label
                                                         class="text-primary">"Web Programming"</label>,<br>
                                                     <label class="text-danger">"short_description"</label> : <label
-                                                        class="text-primary">"this is short_description"</label>,<br>
+                                                        class="text-primary">"this is
+                                                        short_description"</label>,<br>
                                                     <label class="text-danger">"description"</label> : <label
                                                         class="text-primary">"this is description"</label>,<br>
                                                     <label class="text-danger">"bio_instructor"</label> : <label
@@ -283,7 +224,8 @@
                                                     <label class="text-danger">"meta_keyword"</label> : <label
                                                         class="text-primary">"this is meta keyword"</label>,<br>
                                                     <label class="text-danger">"meta_description"</label> : <label
-                                                        class="text-primary">"this is meta description"</label>,<br>
+                                                        class="text-primary">"this is meta
+                                                        description"</label>,<br>
                                                     <label class="text-danger">"is_free_course"</label> : <label
                                                         class="text-primary">"1"</label>,<br>
                                                     <label class="text-danger">"is_prakerja"</label> : <label
@@ -339,7 +281,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Update Data Dashboard Instructor :</h5>
+                        <h5>Update Data Course :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -351,7 +293,7 @@
                             <tbody>
                                 <tr>
                                     <td>PUT</td>
-                                    <td>https://api.vocasia.pasia.id/instructor/dashboard-instructor/22</td>
+                                    <td>https://api.vocasia.pasia.id/admin/course/258</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -377,7 +319,7 @@
                                                 <p>{</p>
                                                 <p class="px-5">
                                                     <label class="text-danger">"title"</label> : <label
-                                                        class="text-primary">"Learning Web Programming"</label>,<br>
+                                                        class="text-primary">"learn Web Programming"</label>,<br>
                                                     <label class="text-danger">"short_description"</label> : <label
                                                         class="text-primary">"this is
                                                         short_description"</label>,<br>
@@ -481,7 +423,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Delete Data Dashboard Instructor :</h5>
+                        <h5>Delete Data Course :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -493,7 +435,7 @@
                             <tbody>
                                 <tr>
                                     <td>DELETE</td>
-                                    <td>https://api.vocasia.pasia.id/instructor/dashboard-instructor/22</td>
+                                    <td>https://api.vocasia.pasia.id/admin/course/258</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -537,16 +479,135 @@
                             </div>
                         </div>
                         <!-- End Table Response -->
+
+                        <h5>Get Course Info :</h5>
+                        <!-- Table Route -->
+                        <table class="table table-bordered border-secondary">
+                            <thead>
+                                <tr class="table-light table-bordered border-secondary">
+                                    <th scope="col">Method</th>
+                                    <th scope="col">Url</th>
+                                    <th scope="col">Request Format</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>GET</td>
+                                    <td>https://api.vocasia.pasia.id/admin/course/info</td>
+                                    <td>Json</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- End Table Route -->
+
+                        <div class="row">
+                            <div class="col text-center">
+                                <h5>Response :</h5>
+                            </div>
+                        </div>
+
+                        <!-- Table Response -->
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <table class="table table-bordered border-secondary">
+                                    <thead>
+                                        <tr class="table-light table-bordered border-secondary">
+                                            <th scope="col">Body</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>{</p>
+                                                <p class="px-5">
+                                                    <label class="text-danger">"status"</label> : <label
+                                                        class="text-success">200</label>,<br>
+                                                    <label class="text-danger">"error"</label> : <label
+                                                        class="text-primary">false</label>,<br>
+                                                    <label class="text-danger">"data"</label> : <label
+                                                        class="text-primary">[ $data ]</label>,
+                                                </p>
+                                                <p>}</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- End Table Response -->
+
+                        <!-- Table Route -->
+                        <h5>Create Course Thumbnail :</h5>
+                        <table class="table table-bordered border-secondary">
+                            <thead>
+                                <tr class="table-light table-bordered border-secondary">
+                                    <th scope="col">Method</th>
+                                    <th scope="col">Url</th>
+                                    <th scope="col">Request Format</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>POST</td>
+                                    <td>https://api.vocasia.pasia.id/admin/course-thumbnail/110</td>
+                                    <td>Masih salah</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- End Table Route -->
+                        <div class="row">
+                            <div class="col text-center">
+                                <h5>Request Parameter :</h5>
+                            </div>
+                        </div>
+                        <!-- Table Parameter -->
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <table class="table table-bordered border-secondary">
+                                    <thead>
+                                        <tr class="table-light table-bordered border-secondary">
+                                            <th scope="col">Body</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>* form-data</p>
+                                                <table class="table table-bordered border-secondary">
+                                                    <thead>
+                                                        <tr class="table-bordered border-secondary">
+                                                            <th scope="col" class="text-secondary">KEY</th>
+                                                            <th scope="col" class="text-secondary">VALUE</th>
+                                                            <th scope="col" class="text-secondary">DESCRIPTION</th>
+                                                        </tr>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>thumbnail
+                                                            </td>
+                                                            <td>
+                                                                <button type="button"
+                                                                    class="btn btn-outline-secondary btn-sm"
+                                                                    disabled>thumbnail.jpg <label
+                                                                        class="px-1"></label>x</button>
+                                                            </td>
+                                                            <td> </td>
+                                                        </tr>
+                                                    </tbody>
+                                                    </thead>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- End Table Parameter -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="card-footer text-center">
-            Documentation Vocasia Project Api | 2021
-        </div>
-    </div>
+    <my-footer></my-footer>
     <!-- End Card page -->
 
     <!-- Optional JavaScript; choose one of the two! -->

@@ -11,72 +11,12 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Title -->
     <title>Vocasia Project Api</title>
+    <script type=module src=../assets/main.js></script>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Vocasia Project Api</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Admin
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="affiliate.html">Affiliate</a></li>
-                            <li><a class="dropdown-item" href="login&register.html">Authentication</a></li>
-                            <li><a class="dropdown-item" href="category.html">Category</a></li>
-                            <li><a class="dropdown-item" href="community.html">Community</a></li>
-                            <li><a class="dropdown-item" href="course.html">Course</a></li>
-                            <li><a class="dropdown-item" href="#">Coupon</a></li>
-                            <li><a class="dropdown-item" href="#">Enrol</a></li>
-                            <li><a class="dropdown-item" href="lesson-admin.html">Lesson Admin</a></li>
-                            <li><a class="dropdown-item" href="#">Users</a></li>
-                            <li><a class="dropdown-item" href="users_mitra.html">Users Mitra</a></li>
-                            <li><a class="dropdown-item" href="#">Revenue</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Instructor
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="../instructor/dashboard_instructor.html">Dashboard
-                                    Instructor</a></li>
-                            <li><a class="dropdown-item" href="../instructor/home_page.html">Home Page</a></li>
-                            <li><a class="dropdown-item" href="../instructor/lesson.html">Lesson</a></li>
-                            <li><a class="dropdown-item" href="#">Question</a></li>
-                            <li><a class="dropdown-item" href="#">Payment Balance</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Users
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="../users/users.html">Users Profil</a>
-                            <li><a class="dropdown-item" href="../users/affiliate.html">Users Afiliate</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- End Navbar -->
+
+    <my-navbar></my-navbar>
 
     <!-- Card page -->
     <div class="container" style="padding-top: 4rem;">
@@ -87,8 +27,8 @@
                         Documentation Role Admin
                     </div>
                     <div class="card-body">
-                        <h3 class="text-center">Route Course</h3>
-                        <h5>Get All Course :</h5>
+                        <h3 class="text-center">Route Category</h3>
+                        <h5>Get All Category :</h5>
                         <!-- Table Route -->
                         <table class="table table-bordered border-secondary">
                             <thead>
@@ -101,7 +41,7 @@
                             <tbody>
                                 <tr>
                                     <td>GET</td>
-                                    <td>https://api.vocasia.pasia.id/admin/courses</td>
+                                    <td>https://api.vocasia.pasia.id/admin/categories</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -145,7 +85,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Get Course By Id :</h5>
+                        <h5>Get Category By Id :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -157,7 +97,7 @@
                             <tbody>
                                 <tr>
                                     <td>GET</td>
-                                    <td>https://api.vocasia.pasia.id/admin/course/1</td>
+                                    <td>https://api.vocasia.pasia.id/admin/category/1</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -199,7 +139,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Create Data Course :</h5>
+                        <h5>Create Data Category :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -211,7 +151,7 @@
                             <tbody>
                                 <tr>
                                     <td>POST</td>
-                                    <td>https://api.vocasia.pasia.id/admin/course</td>
+                                    <td>https://api.vocasia.pasia.id/admin/category-add</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -236,62 +176,18 @@
                                             <td>
                                                 <p>{</p>
                                                 <p class="px-5">
-                                                    <label class="text-danger">"title"</label> : <label
+                                                    <label class="text-danger">"code_category"</label> : <label
+                                                        class="text-primary">"7861561"</label>,<br>
+                                                    <label class="text-danger">"name_category"</label> : <label
                                                         class="text-primary">"Web Programming"</label>,<br>
-                                                    <label class="text-danger">"short_description"</label> : <label
-                                                        class="text-primary">"this is
-                                                        short_description"</label>,<br>
-                                                    <label class="text-danger">"description"</label> : <label
-                                                        class="text-primary">"this is description"</label>,<br>
-                                                    <label class="text-danger">"bio_instructor"</label> : <label
-                                                        class="text-primary">"this is bio instructor"</label>,<br>
-                                                    <label class="text-danger">"bio_status"</label> : <label
-                                                        class="text-primary">"1"</label>,<br>
-                                                    <label class="text-danger">"outcomes"</label> : <label
-                                                        class="text-primary">"this is outcomes"</label>,<br>
-                                                    <label class="text-danger">"language"</label> : <label
-                                                        class="text-primary">"english"</label>,<br>
-                                                    <label class="text-danger">"category_id"</label> : <label
-                                                        class="text-primary">"22"</label>,<br>
-                                                    <label class="text-danger">"sub_category_id"</label> : <label
-                                                        class="text-primary">"5"</label>,<br>
-                                                    <label class="text-danger">"section"</label> : <label
-                                                        class="text-primary">"this section"</label>,<br>
-                                                    <label class="text-danger">"requirement"</label> : <label
-                                                        class="text-primary">"this is requirement"</label>,<br>
-                                                    <label class="text-danger">"price"</label> : <label
-                                                        class="text-primary">"20000"</label>,<br>
-                                                    <label class="text-danger">"discount_flag"</label> : <label
-                                                        class="text-primary">"10"</label>,<br>
-                                                    <label class="text-danger">"discount_price"</label> : <label
-                                                        class="text-primary">"10"</label>,<br>
-                                                    <label class="text-danger">"level_course"</label> : <label
-                                                        class="text-primary">"high"</label>,<br>
-                                                    <label class="text-danger">"user_id"</label> : <label
-                                                        class="text-primary">"2"</label>,<br>
+                                                    <label class="text-danger">"parent_category"</label> : <label
+                                                        class="text-primary">"Desain & Editor"</label>,<br>
+                                                    <label class="text-danger">"slug_category"</label> : <label
+                                                        class="text-primary">"desain-&-editor"</label>,<br>
+                                                    <label class="text-danger">"font_awesome_class"</label> : <label
+                                                        class="text-primary">"fas fa-chess"</label>,<br>
                                                     <label class="text-danger">"thumbnail"</label> : <label
-                                                        class="text-primary">"this is thimbnail"</label>,<br>
-                                                    <label class="text-danger">"visibility"</label> : <label
-                                                        class="text-primary">"this is visibility"</label>,<br>
-                                                    <label class="text-danger">"is_top_course"</label> : <label
-                                                        class="text-primary">"this top course"</label>,<br>
-                                                    <label class="text-danger">"is_admin"</label> : <label
-                                                        class="text-primary">"1"</label>,<br>
-                                                    <label class="text-danger">"status_course"</label> : <label
-                                                        class="text-primary">"long"</label>,<br>
-                                                    <label class="text-danger">"course_overview_provider"</label> :
-                                                    <label class="text-primary">"overview provider"</label>,<br>
-                                                    <label class="text-danger">"meta_keyword"</label> : <label
-                                                        class="text-primary">"this is meta keyword"</label>,<br>
-                                                    <label class="text-danger">"meta_description"</label> : <label
-                                                        class="text-primary">"this is meta
-                                                        description"</label>,<br>
-                                                    <label class="text-danger">"is_free_course"</label> : <label
-                                                        class="text-primary">"1"</label>,<br>
-                                                    <label class="text-danger">"is_prakerja"</label> : <label
-                                                        class="text-primary">"0"</label>,<br>
-                                                    <label class="text-danger">"instructor_revenue"</label> : <label
-                                                        class="text-primary">"1"</label>
+                                                        class="text-primary">"iVBORw0KGgoAAAANSUhEUgAAAy"</label>
                                                 </p>
                                                 <p>}</p>
                                             </td>
@@ -341,7 +237,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Update Data Course :</h5>
+                        <h5>Update Data Category :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -353,7 +249,7 @@
                             <tbody>
                                 <tr>
                                     <td>PUT</td>
-                                    <td>https://api.vocasia.pasia.id/admin/course/258</td>
+                                    <td>https://api.vocasia.pasia.id/admin/category/1</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -378,62 +274,18 @@
                                             <td>
                                                 <p>{</p>
                                                 <p class="px-5">
-                                                    <label class="text-danger">"title"</label> : <label
-                                                        class="text-primary">"learn Web Programming"</label>,<br>
-                                                    <label class="text-danger">"short_description"</label> : <label
-                                                        class="text-primary">"this is
-                                                        short_description"</label>,<br>
-                                                    <label class="text-danger">"description"</label> : <label
-                                                        class="text-primary">"this is description"</label>,<br>
-                                                    <label class="text-danger">"bio_instructor"</label> : <label
-                                                        class="text-primary">"this is bio instructor"</label>,<br>
-                                                    <label class="text-danger">"bio_status"</label> : <label
-                                                        class="text-primary">"1"</label>,<br>
-                                                    <label class="text-danger">"outcomes"</label> : <label
-                                                        class="text-primary">"this is outcomes"</label>,<br>
-                                                    <label class="text-danger">"language"</label> : <label
-                                                        class="text-primary">"english"</label>,<br>
-                                                    <label class="text-danger">"category_id"</label> : <label
-                                                        class="text-primary">"22"</label>,<br>
-                                                    <label class="text-danger">"sub_category_id"</label> : <label
-                                                        class="text-primary">"5"</label>,<br>
-                                                    <label class="text-danger">"section"</label> : <label
-                                                        class="text-primary">"this section"</label>,<br>
-                                                    <label class="text-danger">"requirement"</label> : <label
-                                                        class="text-primary">"this is requirement"</label>,<br>
-                                                    <label class="text-danger">"price"</label> : <label
-                                                        class="text-primary">"20000"</label>,<br>
-                                                    <label class="text-danger">"discount_flag"</label> : <label
-                                                        class="text-primary">"10"</label>,<br>
-                                                    <label class="text-danger">"discount_price"</label> : <label
-                                                        class="text-primary">"10"</label>,<br>
-                                                    <label class="text-danger">"level_course"</label> : <label
-                                                        class="text-primary">"high"</label>,<br>
-                                                    <label class="text-danger">"user_id"</label> : <label
-                                                        class="text-primary">"2"</label>,<br>
+                                                    <label class="text-danger">"code_category"</label> : <label
+                                                        class="text-primary">"7861561"</label>,<br>
+                                                    <label class="text-danger">"name_category"</label> : <label
+                                                        class="text-primary">"Web Programming"</label>,<br>
+                                                    <label class="text-danger">"parent_category"</label> : <label
+                                                        class="text-primary">"Ilmu Komputer"</label>,<br>
+                                                    <label class="text-danger">"slug_category"</label> : <label
+                                                        class="text-primary">"desain-&-editor"</label>,<br>
+                                                    <label class="text-danger">"font_awesome_class"</label> : <label
+                                                        class="text-primary">"fas fa-chess"</label>,<br>
                                                     <label class="text-danger">"thumbnail"</label> : <label
-                                                        class="text-primary">"this is thimbnail"</label>,<br>
-                                                    <label class="text-danger">"visibility"</label> : <label
-                                                        class="text-primary">"this is visibility"</label>,<br>
-                                                    <label class="text-danger">"is_top_course"</label> : <label
-                                                        class="text-primary">"this top course"</label>,<br>
-                                                    <label class="text-danger">"is_admin"</label> : <label
-                                                        class="text-primary">"1"</label>,<br>
-                                                    <label class="text-danger">"status_course"</label> : <label
-                                                        class="text-primary">"long"</label>,<br>
-                                                    <label class="text-danger">"course_overview_provider"</label> :
-                                                    <label class="text-primary">"overview provider"</label>,<br>
-                                                    <label class="text-danger">"meta_keyword"</label> : <label
-                                                        class="text-primary">"this is meta keyword"</label>,<br>
-                                                    <label class="text-danger">"meta_description"</label> : <label
-                                                        class="text-primary">"this is meta
-                                                        description"</label>,<br>
-                                                    <label class="text-danger">"is_free_course"</label> : <label
-                                                        class="text-primary">"1"</label>,<br>
-                                                    <label class="text-danger">"is_prakerja"</label> : <label
-                                                        class="text-primary">"0"</label>,<br>
-                                                    <label class="text-danger">"instructor_revenue"</label> : <label
-                                                        class="text-primary">"1"</label>
+                                                        class="text-primary">"iVBORw0KGgoAAAANSUhEUgAAAy"</label>
                                                 </p>
                                                 <p>}</p>
                                             </td>
@@ -483,7 +335,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Delete Data Course :</h5>
+                        <h5>Delete Data Category :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -495,7 +347,7 @@
                             <tbody>
                                 <tr>
                                     <td>DELETE</td>
-                                    <td>https://api.vocasia.pasia.id/admin/course/258</td>
+                                    <td>https://api.vocasia.pasia.id/admin/category/1</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -540,64 +392,8 @@
                         </div>
                         <!-- End Table Response -->
 
-                        <h5>Get Course Info :</h5>
                         <!-- Table Route -->
-                        <table class="table table-bordered border-secondary">
-                            <thead>
-                                <tr class="table-light table-bordered border-secondary">
-                                    <th scope="col">Method</th>
-                                    <th scope="col">Url</th>
-                                    <th scope="col">Request Format</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>GET</td>
-                                    <td>https://api.vocasia.pasia.id/admin/course/info</td>
-                                    <td>Json</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <!-- End Table Route -->
-
-                        <div class="row">
-                            <div class="col text-center">
-                                <h5>Response :</h5>
-                            </div>
-                        </div>
-
-                        <!-- Table Response -->
-                        <div class="row justify-content-center">
-                            <div class="col-8">
-                                <table class="table table-bordered border-secondary">
-                                    <thead>
-                                        <tr class="table-light table-bordered border-secondary">
-                                            <th scope="col">Body</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <p>{</p>
-                                                <p class="px-5">
-                                                    <label class="text-danger">"status"</label> : <label
-                                                        class="text-success">200</label>,<br>
-                                                    <label class="text-danger">"error"</label> : <label
-                                                        class="text-primary">false</label>,<br>
-                                                    <label class="text-danger">"data"</label> : <label
-                                                        class="text-primary">[ $data ]</label>,
-                                                </p>
-                                                <p>}</p>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <!-- End Table Response -->
-
-                        <!-- Table Route -->
-                        <h5>Create Course Thumbnail :</h5>
+                        <h5>Create Category Thumbnail :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -609,7 +405,7 @@
                             <tbody>
                                 <tr>
                                     <td>POST</td>
-                                    <td>https://api.vocasia.pasia.id/admin/course-thumbnail/110</td>
+                                    <td>https://api.vocasia.pasia.id/admin/category-thumbnail/566</td>
                                     <td>Masih salah</td>
                                 </tr>
                             </tbody>
@@ -667,11 +463,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="card-footer text-center">
-            Documentation Vocasia Project Api | 2021
-        </div>
-    </div>
+    <my-footer></my-footer>
     <!-- End Card page -->
 
     <!-- Optional JavaScript; choose one of the two! -->
