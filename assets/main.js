@@ -25,16 +25,16 @@ class MyNavbar extends HTMLElement {
                             <li><a class="dropdown-item" href="category-admin.html">Category</a></li>
                             <li><a class="dropdown-item" href="community-admin.html">Community</a></li>
                             <li><a class="dropdown-item" href="course-admin.html">Course</a></li>
-                            <li><a class="dropdown-item" href="#">Coupon</a></li>
-                            <li><a class="dropdown-item" href="dashboard-admin">Dashboard Admin</a></li>
+                            <li><a class="dropdown-item" href="coupon-admin.html">Coupon</a></li>
+                            <li><a class="dropdown-item" href="dashboard-admin.html">Dashboard Admin</a></li>
                             <li><a class="dropdown-item" href="#">Enrol</a></li>
-                            <li><a class="dropdown-item" href="#">Instructor</a></li>
+                            <li><a class="dropdown-item" href="instructor-admin.html">Instructor</a></li>
                             <li><a class="dropdown-item" href="lesson-admin.html">Lesson Admin</a></li>
                             <li><a class="dropdown-item" href="#">Revenue</a></li>
                             <li><a class="dropdown-item" href="#">Setting</a></li>
                             <li><a class="dropdown-item" href="users-mitra-admin.html">Users Mitra</a></li>
-                            <li><a class="dropdown-item" href="#">Workshop</a></li>
-                            <li><a class="dropdown-item" href="#">Workshop Student</a></li>
+                            <li><a class="dropdown-item" href="workshop-admin.html">Workshop</a></li>
+                            <li><a class="dropdown-item" href="workshop-student-admin.html">Workshop Student</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown active">
