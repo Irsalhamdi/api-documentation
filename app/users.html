@@ -11,72 +11,12 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Title -->
     <title>Vocasia Project Api</title>
+    <script type=module src=../assets/main.js></script>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Vocasia Project Api</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Admin
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="../admin/affiliate.html">Affiliate</a></li>
-                            <li><a class="dropdown-item" href="../admin/login&register.html">Authentication</a></li>
-                            <li><a class="dropdown-item" href="../admin/category.html">Category</a></li>
-                            <li><a class="dropdown-item" href="../admin/community.html">Community</a></li>
-                            <li><a class="dropdown-item" href="../admin/course.html">Course</a></li>
-                            <li><a class="dropdown-item" href="#">Coupon</a></li>
-                            <li><a class="dropdown-item" href="#">Enrol</a></li>
-                            <li><a class="dropdown-item" href="../admin/lesson-admin.html">Lesson Admin</a></li>
-                            <li><a class="dropdown-item" href="#">Users</a></li>
-                            <li><a class="dropdown-item" href="../admin/users_mitra.html">Users Mitra</a></li>
-                            <li><a class="dropdown-item" href="#">Revenue</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Instructor
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="dashboard_instructor.html">Dashboard
-                                    Instructor</a></li>
-                            <li><a class="dropdown-item" href="home_page.html">Home Page</a></li>
-                            <li><a class="dropdown-item" href="lesson.html">Lesson</a></li>
-                            <li><a class="dropdown-item" href="#">Question</a></li>
-                            <li><a class="dropdown-item" href="#">Payment Balance</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Users
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="../users/users.html">Users Profil</a>
-                            <li><a class="dropdown-item" href="../users/affiliate.html">Users Afiliate</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- End Navbar -->
+
+    <my-navbar></my-navbar>
 
     <!-- Card page -->
     <div class="container" style="padding-top: 4rem;">
@@ -84,11 +24,11 @@
             <div class="col-12" style="overflow-x: auto;">
                 <div class="card">
                     <div class="card-header">
-                        Documentation Role Instructor
+                        Documentation Role Users
                     </div>
                     <div class="card-body">
-                        <h3 class="text-center">Route Home Page</h3>
-                        <h5>Get All Courses :</h5>
+                        <h3 class="text-center">Route Users</h3>
+                        <h5>Get User Info :</h5>
                         <!-- Table Route -->
                         <table class="table table-bordered border-secondary">
                             <thead>
@@ -101,7 +41,7 @@
                             <tbody>
                                 <tr>
                                     <td>GET</td>
-                                    <td>https://api.vocasia.pasia.id/homepage/courses</td>
+                                    <td>https://api.vocasia.pasia.id/users/users-info/22</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -145,7 +85,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Get Detail Course :</h5>
+                        <h5>Get My Course :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -157,7 +97,7 @@
                             <tbody>
                                 <tr>
                                     <td>GET</td>
-                                    <td>https://api.vocasia.pasia.id/homepage/course/21</td>
+                                    <td>https://api.vocasia.pasia.id/users/course/my/12</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -199,7 +139,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Get Course Detail Instructor :</h5>
+                        <h5>Get My Lesson :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -211,7 +151,7 @@
                             <tbody>
                                 <tr>
                                     <td>GET</td>
-                                    <td>https://api.vocasia.pasia.id/homepage/course/detail/instructor/22</td>
+                                    <td>https://api.vocasia.pasia.id/users/course/my/lesson/112</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -253,7 +193,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Get Course Rating :</h5>
+                        <h5>Get Progress Lesson :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -265,7 +205,7 @@
                             <tbody>
                                 <tr>
                                     <td>GET</td>
-                                    <td>https://api.vocasia.pasia.id/homepage/course/rating/25</td>
+                                    <td>https://api.vocasia.pasia.id/users/lesson/progress/86</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -307,7 +247,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Get All Categories :</h5>
+                        <h5>Update User Profil :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -318,117 +258,8 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>GET</td>
-                                    <td>https://api.vocasia.pasia.id/homepage/categories</td>
-                                    <td>Json</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <!-- End Table Route -->
-                        <div class="row">
-                            <div class="col text-center">
-                                <h5>Response :</h5>
-                            </div>
-                        </div>
-                        <!-- Table Response -->
-                        <div class="row justify-content-center">
-                            <div class="col-8">
-                                <table class="table table-bordered border-secondary">
-                                    <thead>
-                                        <tr class="table-light table-bordered border-secondary">
-                                            <th scope="col">Body</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <p>{</p>
-                                                <p class="px-5">
-                                                    <label class="text-danger">"status"</label> : <label
-                                                        class="text-success">200</label>,<br>
-                                                    <label class="text-danger">"error"</label> : <label
-                                                        class="text-primary">false</label>,<br>
-                                                    <label class="text-danger">"data"</label> : <label
-                                                        class="text-primary">[ $data ]</label>,
-                                                </p>
-                                                <p>}</p>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <!-- End Table Response -->
-
-                        <!-- Table Route -->
-                        <h5>Get Carts List :</h5>
-                        <table class="table table-bordered border-secondary">
-                            <thead>
-                                <tr class="table-light table-bordered border-secondary">
-                                    <th scope="col">Method</th>
-                                    <th scope="col">Url</th>
-                                    <th scope="col">Request Format</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>GET</td>
-                                    <td>https://api.vocasia.pasia.id/homepage/carts/21</td>
-                                    <td>Json</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <!-- End Table Route -->
-
-                        <div class="row">
-                            <div class="col text-center">
-                                <h5>Response :</h5>
-                            </div>
-                        </div>
-                        <!-- Table Response -->
-                        <div class="row justify-content-center">
-                            <div class="col-8">
-                                <table class="table table-bordered border-secondary">
-                                    <thead>
-                                        <tr class="table-light table-bordered border-secondary">
-                                            <th scope="col">Body</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <p>{</p>
-                                                <p class="px-5">
-                                                    <label class="text-danger">"status"</label> : <label
-                                                        class="text-success">200</label>,<br>
-                                                    <label class="text-danger">"error"</label> : <label
-                                                        class="text-primary">false</label>,<br>
-                                                    <label class="text-danger">"data"</label> : <label
-                                                        class="text-primary">[ $data ]</label>,
-                                                </p>
-                                                <p>}</p>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <!-- End Table Response -->
-
-                        <!-- Table Route -->
-                        <h5>Add Carts :</h5>
-                        <table class="table table-bordered border-secondary">
-                            <thead>
-                                <tr class="table-light table-bordered border-secondary">
-                                    <th scope="col">Method</th>
-                                    <th scope="col">Url</th>
-                                    <th scope="col">Request Format</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>POST</td>
-                                    <td>https://api.vocasia.pasia.id/homepage/add-to-cart</td>
+                                    <td>PUT</td>
+                                    <td>https://api.vocasia.pasia.id/user/profile/user_profile/133</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -453,12 +284,273 @@
                                             <td>
                                                 <p>{</p>
                                                 <p class="px-5">
-                                                    <label class="text-danger">"id_users"</label> : <label
-                                                        class="text-primary">"127"</label>,<br>
+                                                    <label class="text-danger">"first_name"</label> : <label
+                                                        class="text-primary">"admin"</label>,<br>
+                                                    <label class="text-danger">"biography"</label> : <label
+                                                        class="text-primary">"this is my biography"</label>,<br>
+                                                    <label class="text-danger">"phone"</label> : <label
+                                                        class="text-primary">"02191928"</label>,<br>
+                                                    <label class="text-danger">"facebook_link"</label> : <label
+                                                        class="text-primary">"this is my link facebook"</label>,<br>
+                                                    <label class="text-danger">"instragram"</label> : <label
+                                                        class="text-primary">"this is my instagram"</label>,<br>
+                                                    <label class="text-danger">"twitter_link"</label> : <label
+                                                        class="text-primary">"this is my instagram"</label>
+                                                </p>
+                                                <p>}</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- End Table Parameter -->
+
+                        <div class="row">
+                            <div class="col text-center">
+                                <h5>Response :</h5>
+                            </div>
+                        </div>
+                        <!-- Table Response -->
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <table class="table table-bordered border-secondary">
+                                    <thead>
+                                        <tr class="table-light table-bordered border-secondary">
+                                            <th scope="col">Body</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>{</p>
+                                                <p class="px-5">
+                                                    <label class="text-danger">"status"</label> : <label
+                                                        class="text-success">200</label>,<br>
+                                                    <label class="text-danger">"error"</label> : <label
+                                                        class="text-primary">false</label>,<br>
+                                                    <label class="text-danger">"data"</label> : <label>[</label><br>
+                                                    <label class="text-danger p-3">"messages"</label> : <label
+                                                        class="text-primary">"data
+                                                        successfull
+                                                        updated"</label>,<br><label>]</label>
+
+                                                </p>
+                                                <p>}</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- End Table Response -->
+
+                        <!-- Table Route -->
+                        <h5>Update User Credentials :</h5>
+                        <table class="table table-bordered border-secondary">
+                            <thead>
+                                <tr class="table-light table-bordered border-secondary">
+                                    <th scope="col">Method</th>
+                                    <th scope="col">Url</th>
+                                    <th scope="col">Request Format</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>PUT</td>
+                                    <td>https://api.vocasia.pasia.id/user/profile/user_credentials/255</td>
+                                    <td>Json</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- End Table Route -->
+                        <div class="row">
+                            <div class="col text-center">
+                                <h5>Request Parameter :</h5>
+                            </div>
+                        </div>
+                        <!-- Table Parameter -->
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <table class="table table-bordered border-secondary">
+                                    <thead>
+                                        <tr class="table-light table-bordered border-secondary">
+                                            <th scope="col">Body</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>{</p>
+                                                <p class="px-5">
+                                                    <label class="text-danger">"email"</label> : <label
+                                                        class="text-primary">"example@yahoo.com"</label>,<br>
+                                                    <label class="text-danger">"old_password"</label> : <label
+                                                        class="text-primary">"54321"</label>,<br>
+                                                    <label class="text-danger">"password"</label> : <label
+                                                        class="text-primary">"12345"</label>,<br>
+                                                    <label class="text-danger">"new_password_confirm"</label> : <label
+                                                        class="text-primary">"12345"</label>
+                                                </p>
+                                                <p>}</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- End Table Parameter -->
+
+                        <div class="row">
+                            <div class="col text-center">
+                                <h5>Response :</h5>
+                            </div>
+                        </div>
+                        <!-- Table Response -->
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <table class="table table-bordered border-secondary">
+                                    <thead>
+                                        <tr class="table-light table-bordered border-secondary">
+                                            <th scope="col">Body</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>{</p>
+                                                <p class="px-5">
+                                                    <label class="text-danger">"status"</label> : <label
+                                                        class="text-success">200</label>,<br>
+                                                    <label class="text-danger">"error"</label> : <label
+                                                        class="text-primary">false</label>,<br>
+                                                    <label class="text-danger">"data"</label> : <label>[</label><br>
+                                                    <label class="text-danger p-3">"messages"</label> : <label
+                                                        class="text-primary">"data
+                                                        successfull
+                                                        updated"</label>,<br><label>]</label>
+
+                                                </p>
+                                                <p>}</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- End Table Response -->
+
+                        <!-- Table Route -->
+                        <h5>Create User Photo :</h5>
+                        <table class="table table-bordered border-secondary">
+                            <thead>
+                                <tr class="table-light table-bordered border-secondary">
+                                    <th scope="col">Method</th>
+                                    <th scope="col">Url</th>
+                                    <th scope="col">Request Format</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>POST</td>
+                                    <td>https://api.vocasia.pasia.id/users/profile/user_photo/100</td>
+                                    <td>Masih salah</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- End Table Route -->
+                        <div class="row">
+                            <div class="col text-center">
+                                <h5>Request Parameter :</h5>
+                            </div>
+                        </div>
+                        <!-- Table Parameter -->
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <table class="table table-bordered border-secondary">
+                                    <thead>
+                                        <tr class="table-light table-bordered border-secondary">
+                                            <th scope="col">Body</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>* form-data</p>
+                                                <table class="table table-bordered border-secondary">
+                                                    <thead>
+                                                        <tr class="table-bordered border-secondary">
+                                                            <th scope="col" class="text-secondary">KEY</th>
+                                                            <th scope="col" class="text-secondary">VALUE</th>
+                                                            <th scope="col" class="text-secondary">DESCRIPTION</th>
+                                                        </tr>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>foto_profile
+                                                            </td>
+                                                            <td>
+                                                                <button type="button"
+                                                                    class="btn btn-outline-secondary btn-sm"
+                                                                    disabled>photo.jpg <label
+                                                                        class="px-1"></label>x</button>
+                                                            </td>
+                                                            <td> </td>
+                                                        </tr>
+                                                    </tbody>
+                                                    </thead>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- End Table Parameter -->
+
+                        <!-- Table Route -->
+                        <h5>Create Voucher :</h5>
+                        <table class="table table-bordered border-secondary">
+                            <thead>
+                                <tr class="table-light table-bordered border-secondary">
+                                    <th scope="col">Method</th>
+                                    <th scope="col">Url</th>
+                                    <th scope="col">Request Format</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>POST</td>
+                                    <td>https://api.vocasia.pasia.id/users/voucher</td>
+                                    <td>Json</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- End Table Route -->
+                        <div class="row">
+                            <div class="col text-center">
+                                <h5>Request Parameter :</h5>
+                            </div>
+                        </div>
+                        <!-- Table Parameter -->
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <table class="table table-bordered border-secondary">
+                                    <thead>
+                                        <tr class="table-light table-bordered border-secondary">
+                                            <th scope="col">Body</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>{</p>
+                                                <p class="px-5">
+                                                    <label class="text-danger">"id_user"</label> : <label
+                                                        class="text-primary">"12"</label>,<br>
                                                     <label class="text-danger">"cart_item"</label> : <label
-                                                        class="text-primary">"this cart item"</label>,<br>
+                                                        class="text-primary">"199"</label>,<br>
                                                     <label class="text-danger">"cart_price"</label> : <label
-                                                        class="text-primary">"20000"</label>
+                                                        class="text-primary">"10000"</label>
                                                 </p>
                                                 <p>}</p>
                                             </td>
@@ -508,227 +600,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Get Filter :</h5>
-                        <table class="table table-bordered border-secondary">
-                            <thead>
-                                <tr class="table-light table-bordered border-secondary">
-                                    <th scope="col">Method</th>
-                                    <th scope="col">Url</th>
-                                    <th scope="col">Request Format</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>GET</td>
-                                    <td>https://api.vocasia.pasia.id/homepage/filter</td>
-                                    <td>Json</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <!-- End Table Route -->
-
-                        <div class="row">
-                            <div class="col text-center">
-                                <h5>Response :</h5>
-                            </div>
-                        </div>
-                        <!-- Table Response -->
-                        <div class="row justify-content-center">
-                            <div class="col-8">
-                                <table class="table table-bordered border-secondary">
-                                    <thead>
-                                        <tr class="table-light table-bordered border-secondary">
-                                            <th scope="col">Body</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <p>{</p>
-                                                <p class="px-5">
-                                                    <label class="text-danger">"status"</label> : <label
-                                                        class="text-success">200</label>,<br>
-                                                    <label class="text-danger">"error"</label> : <label
-                                                        class="text-primary">false</label>,<br>
-                                                    <label class="text-danger">"data"</label> : <label
-                                                        class="text-primary">[ $data ]</label>,
-                                                </p>
-                                                <p>}</p>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <!-- End Table Response -->
-
-                        <!-- Table Route -->
-                        <h5>Get Section :</h5>
-                        <table class="table table-bordered border-secondary">
-                            <thead>
-                                <tr class="table-light table-bordered border-secondary">
-                                    <th scope="col">Method</th>
-                                    <th scope="col">Url</th>
-                                    <th scope="col">Request Format</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>GET</td>
-                                    <td>https://api.vocasia.pasia.id/homepage/section/11</td>
-                                    <td>Json</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <!-- End Table Route -->
-
-                        <div class="row">
-                            <div class="col text-center">
-                                <h5>Response :</h5>
-                            </div>
-                        </div>
-                        <!-- Table Response -->
-                        <div class="row justify-content-center">
-                            <div class="col-8">
-                                <table class="table table-bordered border-secondary">
-                                    <thead>
-                                        <tr class="table-light table-bordered border-secondary">
-                                            <th scope="col">Body</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <p>{</p>
-                                                <p class="px-5">
-                                                    <label class="text-danger">"status"</label> : <label
-                                                        class="text-success">200</label>,<br>
-                                                    <label class="text-danger">"error"</label> : <label
-                                                        class="text-primary">false</label>,<br>
-                                                    <label class="text-danger">"data"</label> : <label
-                                                        class="text-primary">[ $data ]</label>,
-                                                </p>
-                                                <p>}</p>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <!-- End Table Response -->
-
-                        <!-- Table Route -->
-                        <h5>Get Users Info :</h5>
-                        <table class="table table-bordered border-secondary">
-                            <thead>
-                                <tr class="table-light table-bordered border-secondary">
-                                    <th scope="col">Method</th>
-                                    <th scope="col">Url</th>
-                                    <th scope="col">Request Format</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>GET</td>
-                                    <td>https://api.vocasia.pasia.id/homepage/users-info/22</td>
-                                    <td>Json</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <!-- End Table Route -->
-
-                        <div class="row">
-                            <div class="col text-center">
-                                <h5>Response :</h5>
-                            </div>
-                        </div>
-                        <!-- Table Response -->
-                        <div class="row justify-content-center">
-                            <div class="col-8">
-                                <table class="table table-bordered border-secondary">
-                                    <thead>
-                                        <tr class="table-light table-bordered border-secondary">
-                                            <th scope="col">Body</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <p>{</p>
-                                                <p class="px-5">
-                                                    <label class="text-danger">"status"</label> : <label
-                                                        class="text-success">200</label>,<br>
-                                                    <label class="text-danger">"error"</label> : <label
-                                                        class="text-primary">false</label>,<br>
-                                                    <label class="text-danger">"data"</label> : <label
-                                                        class="text-primary">[ $data ]</label>,
-                                                </p>
-                                                <p>}</p>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <!-- End Table Response -->
-
-                        <!-- Table Route -->
-                        <h5>Get Wishlist :</h5>
-                        <table class="table table-bordered border-secondary">
-                            <thead>
-                                <tr class="table-light table-bordered border-secondary">
-                                    <th scope="col">Method</th>
-                                    <th scope="col">Url</th>
-                                    <th scope="col">Request Format</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>GET</td>
-                                    <td>https://api.vocasia.pasia.id/homepage/wishlist</td>
-                                    <td>Json</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <!-- End Table Route -->
-
-                        <div class="row">
-                            <div class="col text-center">
-                                <h5>Response :</h5>
-                            </div>
-                        </div>
-                        <!-- Table Response -->
-                        <div class="row justify-content-center">
-                            <div class="col-8">
-                                <table class="table table-bordered border-secondary">
-                                    <thead>
-                                        <tr class="table-light table-bordered border-secondary">
-                                            <th scope="col">Body</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <p>{</p>
-                                                <p class="px-5">
-                                                    <label class="text-danger">"status"</label> : <label
-                                                        class="text-success">200</label>,<br>
-                                                    <label class="text-danger">"error"</label> : <label
-                                                        class="text-primary">false</label>,<br>
-                                                    <label class="text-danger">"data"</label> : <label
-                                                        class="text-primary">[ $data ]</label>,
-                                                </p>
-                                                <p>}</p>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <!-- End Table Response -->
-
-                        <!-- Table Route -->
-                        <h5>Add to Wishlist :</h5>
+                        <h5>Create Data Payment :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -740,7 +612,7 @@
                             <tbody>
                                 <tr>
                                     <td>POST</td>
-                                    <td>https://api.vocasia.pasia.id/homepage/wishlist</td>
+                                    <td>https://api.vocasia.pasia.id/users/payment/course</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -766,10 +638,19 @@
                                                 <p>{</p>
                                                 <p class="px-5">
                                                     <label class="text-danger">"id_user"</label> : <label
-                                                        class="text-primary">"125"</label>,<br>
-                                                    <label class="text-danger">"wishlist_item"</label> : <label
-                                                        class="text-primary">"this wishlist
-                                                        item"</label>
+                                                        class="text-primary">"121"</label>,<br>
+                                                    <label class="text-danger">"payment_type"</label> : <label
+                                                        class="text-primary">"this is payment_type"</label>,<br>
+                                                    <label class="text-danger">"payment_bank"</label> : <label
+                                                        class="text-primary">"this is payment_bank"</label>,<br>
+                                                    <label class="text-danger">"payment_va"</label> : <label
+                                                        class="text-primary">"this is payment_va"</label>,<br>
+                                                    <label class="text-danger">"coupon"</label> : <label
+                                                        class="text-primary">"this is coupon"</label>,<br>
+                                                    <label class="text-danger">"course_id"</label> : <label
+                                                        class="text-primary">"100"</label>,<br>
+                                                    <label class="text-danger">"amount"</label> : <label
+                                                        class="text-primary">"this is amount"</label>
                                                 </p>
                                                 <p>}</p>
                                             </td>
@@ -805,9 +686,9 @@
                                                         class="text-primary">false</label>,<br>
                                                     <label class="text-danger">"data"</label> : <label>[</label><br>
                                                     <label class="text-danger p-3">"messages"</label> : <label
-                                                        class="text-primary">"data
-                                                        successfull
+                                                        class="text-primary">"data successfull
                                                         created"</label>,<br><label>]</label>
+
                                                 </p>
                                                 <p>}</p>
                                             </td>
@@ -819,7 +700,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Delete Data Wishlist :</h5>
+                        <h5>Create Data Watch History :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -830,13 +711,49 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>DELETE</td>
-                                    <td>https://api.vocasia.pasia.id/home_page/wishlist/delete/255</td>
+                                    <td>POST</td>
+                                    <td>https://api.vocasia.pasia.id/users/lesson/update/progress</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
                         </table>
                         <!-- End Table Route -->
+                        <div class="row">
+                            <div class="col text-center">
+                                <h5>Request Parameter :</h5>
+                            </div>
+                        </div>
+                        <!-- Table Parameter -->
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <table class="table table-bordered border-secondary">
+                                    <thead>
+                                        <tr class="table-light table-bordered border-secondary">
+                                            <th scope="col">Body</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>{</p>
+                                                <p class="px-5">
+                                                    <label class="text-danger">"id_user"</label> : <label
+                                                        class="text-primary">"127"</label>,<br>
+                                                    <label class="text-danger">"course_id"</label> : <label
+                                                        class="text-primary">"99"</label>,<br>
+                                                    <label class="text-danger">"lesson_id"</label> : <label
+                                                        class="text-primary">"87"</label>,<br>
+                                                    <label class="text-danger">"progress"</label> : <label
+                                                        class="text-primary">"this is Progress"</label>
+                                                </p>
+                                                <p>}</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- End Table Parameter -->
 
                         <div class="row">
                             <div class="col text-center">
@@ -863,9 +780,8 @@
                                                         class="text-primary">false</label>,<br>
                                                     <label class="text-danger">"data"</label> : <label>[</label><br>
                                                     <label class="text-danger p-3">"messages"</label> : <label
-                                                        class="text-primary">"data
-                                                        successfull
-                                                        deleted"</label>,<br><label>]</label>
+                                                        class="text-primary">"data successfull
+                                                        updated"</label>,<br><label>]</label>
 
                                                 </p>
                                                 <p>}</p>
@@ -876,16 +792,13 @@
                             </div>
                         </div>
                         <!-- End Table Response -->
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="card-footer text-center">
-            Documentation Vocasia Project Api | 2021
-        </div>
-    </div>
+    <my-footer></my-footer>
     <!-- End Card page -->
 
     <!-- Optional JavaScript; choose one of the two! -->

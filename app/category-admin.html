@@ -11,72 +11,12 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Title -->
     <title>Vocasia Project Api</title>
+    <script type=module src=../assets/main.js></script>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Vocasia Project Api</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Admin
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="affiliate.html">Affiliate</a></li>
-                            <li><a class="dropdown-item" href="login&register.html">Authentication</a></li>
-                            <li><a class="dropdown-item" href="category.html">Category</a></li>
-                            <li><a class="dropdown-item" href="community.html">Community</a></li>
-                            <li><a class="dropdown-item" href="course.html">Course</a></li>
-                            <li><a class="dropdown-item" href="#">Coupon</a></li>
-                            <li><a class="dropdown-item" href="#">Enrol</a></li>
-                            <li><a class="dropdown-item" href="lesson-admin.html">Lesson Admin</a></li>
-                            <li><a class="dropdown-item" href="#">Users</a></li>
-                            <li><a class="dropdown-item" href="users_mitra.html">Users Mitra</a></li>
-                            <li><a class="dropdown-item" href="#">Revenue</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Instructor
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="../instructor/dashboard_instructor.html">Dashboard
-                                    Instructor</a></li>
-                            <li><a class="dropdown-item" href="../instructor/home_page.html">Home Page</a></li>
-                            <li><a class="dropdown-item" href="../instructor/lesson.html">Lesson</a></li>
-                            <li><a class="dropdown-item" href="#">Question</a></li>
-                            <li><a class="dropdown-item" href="#">Payment Balance</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Users
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="../users/users.html">Users Profil</a>
-                            <li><a class="dropdown-item" href="../users/affiliate.html">Users Afiliate</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- End Navbar -->
+
+    <my-navbar></my-navbar>
 
     <!-- Card page -->
     <div class="container" style="padding-top: 4rem;">
@@ -133,7 +73,45 @@
                                                     <label class="text-danger">"error"</label> : <label
                                                         class="text-primary">false</label>,<br>
                                                     <label class="text-danger">"data"</label> : <label
-                                                        class="text-primary">[ $data ]</label>,
+                                                        class="text-primary">[ </label><br>
+                                                    <label class="px-4 text-danger">"id" <label
+                                                            class="text-dark">:</label>
+                                                        <label class="text-primary">"14"</label>
+                                                        <label class="text-dark">,</label></label><br>
+                                                    <label class="px-4 text-danger">"code_category" <label
+                                                            class="text-dark">:</label>
+                                                        <label class="text-primary">"a6c70aa3ad"</label>
+                                                        <label class="text-dark">,</label></label><br>
+                                                    <label class="px-4 text-danger">"name_category" <label
+                                                            class="text-dark">:</label>
+                                                        <label class="text-primary">"Akuntansi & Keuangan"</label>
+                                                        <label class="text-dark">,</label></label><br>
+                                                    <label class="px-4 text-danger">"parent_category" <label
+                                                            class="text-dark">:</label>
+                                                        <label class="text-primary">"0"</label>
+                                                        <label class="text-dark">,</label></label><br>
+                                                    <label class="px-4 text-danger">"slug_category" <label
+                                                            class="text-dark">:</label>
+                                                        <label class="text-primary">"akuntansi-amp-keuangan"</label>
+                                                        <label class="text-dark">,</label></label><br>
+                                                    <label class="px-4 text-danger">"font_awesome_class" <label
+                                                            class="text-dark">:</label>
+                                                        <label class="text-primary">"fas fa-calculator"</label>
+                                                        <label class="text-dark">,</label></label><br>
+                                                    <label class="px-4 text-danger">"thumbnail" <label
+                                                            class="text-dark">:</label>
+                                                        <label
+                                                            class="text-primary">"http://localhost:8080/uploads/category_thumbnail/category_thumbnail_default_14.jpg"</label>
+                                                        <label class="text-dark">,</label></label><br>
+                                                    <label class="px-4 text-danger">"create_at" <label
+                                                            class="text-dark">:</label>
+                                                        <label class="text-primary">"1577228400"</label>
+                                                        <label class="text-dark">,</label></label><br>
+                                                    <label class="px-4 text-danger">"update_at" <label
+                                                            class="text-dark">:</label>
+                                                        <label class="text-primary">"1618185600"</label>
+                                                        <label class="text-dark">,</label></label><br>
+                                                    <label class="text-primary">]</label>, ...
                                                 </p>
                                                 <p>}</p>
                                             </td>
@@ -157,7 +135,7 @@
                             <tbody>
                                 <tr>
                                     <td>GET</td>
-                                    <td>https://api.vocasia.pasia.id/admin/category/1</td>
+                                    <td>https://api.vocasia.pasia.id/admin/category/14</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -187,7 +165,45 @@
                                                     <label class="text-danger">"error"</label> : <label
                                                         class="text-primary">false</label>,<br>
                                                     <label class="text-danger">"data"</label> : <label
-                                                        class="text-primary">[ $data ]</label>,
+                                                        class="text-primary">[ </label><br>
+                                                    <label class="px-4 text-danger">"id" <label
+                                                            class="text-dark">:</label>
+                                                        <label class="text-primary">"14"</label>
+                                                        <label class="text-dark">,</label></label><br>
+                                                    <label class="px-4 text-danger">"code_category" <label
+                                                            class="text-dark">:</label>
+                                                        <label class="text-primary">"a6c70aa3ad"</label>
+                                                        <label class="text-dark">,</label></label><br>
+                                                    <label class="px-4 text-danger">"name_category" <label
+                                                            class="text-dark">:</label>
+                                                        <label class="text-primary">"Akuntansi & Keuangan"</label>
+                                                        <label class="text-dark">,</label></label><br>
+                                                    <label class="px-4 text-danger">"parent_category" <label
+                                                            class="text-dark">:</label>
+                                                        <label class="text-primary">"0"</label>
+                                                        <label class="text-dark">,</label></label><br>
+                                                    <label class="px-4 text-danger">"slug_category" <label
+                                                            class="text-dark">:</label>
+                                                        <label class="text-primary">"akuntansi-amp-keuangan"</label>
+                                                        <label class="text-dark">,</label></label><br>
+                                                    <label class="px-4 text-danger">"font_awesome_class" <label
+                                                            class="text-dark">:</label>
+                                                        <label class="text-primary">"fas fa-calculator"</label>
+                                                        <label class="text-dark">,</label></label><br>
+                                                    <label class="px-4 text-danger">"thumbnail" <label
+                                                            class="text-dark">:</label>
+                                                        <label
+                                                            class="text-primary">"http://localhost:8080/uploads/category_thumbnail/category_thumbnail_default_14.jpg"</label>
+                                                        <label class="text-dark">,</label></label><br>
+                                                    <label class="px-4 text-danger">"create_at" <label
+                                                            class="text-dark">:</label>
+                                                        <label class="text-primary">"1577228400"</label>
+                                                        <label class="text-dark">,</label></label><br>
+                                                    <label class="px-4 text-danger">"update_at" <label
+                                                            class="text-dark">:</label>
+                                                        <label class="text-primary">"1618185600"</label>
+                                                        <label class="text-dark">,</label></label><br>
+                                                    <label class="text-primary">]</label>
                                                 </p>
                                                 <p>}</p>
                                             </td>
@@ -211,7 +227,7 @@
                             <tbody>
                                 <tr>
                                     <td>POST</td>
-                                    <td>https://api.vocasia.pasia.id/admin/category-add</td>
+                                    <td>https://api.vocasia.pasia.id/admin/category</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -242,12 +258,8 @@
                                                         class="text-primary">"Web Programming"</label>,<br>
                                                     <label class="text-danger">"parent_category"</label> : <label
                                                         class="text-primary">"Desain & Editor"</label>,<br>
-                                                    <label class="text-danger">"slug_category"</label> : <label
-                                                        class="text-primary">"desain-&-editor"</label>,<br>
                                                     <label class="text-danger">"font_awesome_class"</label> : <label
-                                                        class="text-primary">"fas fa-chess"</label>,<br>
-                                                    <label class="text-danger">"thumbnail"</label> : <label
-                                                        class="text-primary">"iVBORw0KGgoAAAANSUhEUgAAAy"</label>
+                                                        class="text-primary">"fas fa-chess"</label>
                                                 </p>
                                                 <p>}</p>
                                             </td>
@@ -309,7 +321,7 @@
                             <tbody>
                                 <tr>
                                     <td>PUT</td>
-                                    <td>https://api.vocasia.pasia.id/admin/category/1</td>
+                                    <td>https://api.vocasia.pasia.id/admin/category/22</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -340,12 +352,8 @@
                                                         class="text-primary">"Web Programming"</label>,<br>
                                                     <label class="text-danger">"parent_category"</label> : <label
                                                         class="text-primary">"Ilmu Komputer"</label>,<br>
-                                                    <label class="text-danger">"slug_category"</label> : <label
-                                                        class="text-primary">"desain-&-editor"</label>,<br>
                                                     <label class="text-danger">"font_awesome_class"</label> : <label
-                                                        class="text-primary">"fas fa-chess"</label>,<br>
-                                                    <label class="text-danger">"thumbnail"</label> : <label
-                                                        class="text-primary">"iVBORw0KGgoAAAANSUhEUgAAAy"</label>
+                                                        class="text-primary">"fas fa-chess"</label>
                                                 </p>
                                                 <p>}</p>
                                             </td>
@@ -466,7 +474,7 @@
                                 <tr>
                                     <td>POST</td>
                                     <td>https://api.vocasia.pasia.id/admin/category-thumbnail/566</td>
-                                    <td>Masih salah</td>
+                                    <td>file</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -506,7 +514,7 @@
                                                                     disabled>thumbnail.jpg <label
                                                                         class="px-1"></label>x</button>
                                                             </td>
-                                                            <td> </td>
+                                                            <td></td>
                                                         </tr>
                                                     </tbody>
                                                     </thead>
@@ -518,16 +526,51 @@
                             </div>
                         </div>
                         <!-- End Table Parameter -->
+
+                        <div class="row">
+                            <div class="col text-center">
+                                <h5>Response :</h5>
+                            </div>
+                        </div>
+                        <!-- Table Response -->
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <table class="table table-bordered border-secondary">
+                                    <thead>
+                                        <tr class="table-light table-bordered border-secondary">
+                                            <th scope="col">Body</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>{</p>
+                                                <p class="px-5">
+                                                    <label class="text-danger">"status"</label> : <label
+                                                        class="text-success">200</label>,<br>
+                                                    <label class="text-danger">"error"</label> : <label
+                                                        class="text-primary">false</label>,<br>
+                                                    <label class="text-danger">"data"</label> : <label>[</label><br>
+                                                    <label class="text-danger p-3">"messages"</label> : <label
+                                                        class="text-primary">"data
+                                                        successfull
+                                                        created"</label>,<br><label>]</label>
+
+                                                </p>
+                                                <p>}</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- End Table Response -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="card-footer text-center">
-            Documentation Vocasia Project Api | 2021
-        </div>
-    </div>
+    <my-footer></my-footer>
     <!-- End Card page -->
 
     <!-- Optional JavaScript; choose one of the two! -->
