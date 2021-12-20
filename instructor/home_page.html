@@ -34,16 +34,16 @@
                             Admin
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="affiliate.html">Affiliate</a></li>
-                            <li><a class="dropdown-item" href="login&register.html">Authentication</a></li>
-                            <li><a class="dropdown-item" href="category.html">Category</a></li>
-                            <li><a class="dropdown-item" href="community.html">Community</a></li>
-                            <li><a class="dropdown-item" href="course.html">Course</a></li>
+                            <li><a class="dropdown-item" href="../admin/affiliate.html">Affiliate</a></li>
+                            <li><a class="dropdown-item" href="../admin/login&register.html">Authentication</a></li>
+                            <li><a class="dropdown-item" href="../admin/category.html">Category</a></li>
+                            <li><a class="dropdown-item" href="../admin/community.html">Community</a></li>
+                            <li><a class="dropdown-item" href="../admin/course.html">Course</a></li>
                             <li><a class="dropdown-item" href="#">Coupon</a></li>
                             <li><a class="dropdown-item" href="#">Enrol</a></li>
-                            <li><a class="dropdown-item" href="lesson-admin.html">Lesson Admin</a></li>
+                            <li><a class="dropdown-item" href="../admin/lesson-admin.html">Lesson Admin</a></li>
                             <li><a class="dropdown-item" href="#">Users</a></li>
-                            <li><a class="dropdown-item" href="users_mitra.html">Users Mitra</a></li>
+                            <li><a class="dropdown-item" href="../admin/users_mitra.html">Users Mitra</a></li>
                             <li><a class="dropdown-item" href="#">Revenue</a></li>
                         </ul>
                     </li>
@@ -53,10 +53,10 @@
                             Instructor
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="../instructor/dashboard_instructor.html">Dashboard
+                            <li><a class="dropdown-item" href="dashboard_instructor.html">Dashboard
                                     Instructor</a></li>
-                            <li><a class="dropdown-item" href="../instructor/home_page.html">Home Page</a></li>
-                            <li><a class="dropdown-item" href="../instructor/lesson.html">Lesson</a></li>
+                            <li><a class="dropdown-item" href="home_page.html">Home Page</a></li>
+                            <li><a class="dropdown-item" href="lesson.html">Lesson</a></li>
                             <li><a class="dropdown-item" href="#">Question</a></li>
                             <li><a class="dropdown-item" href="#">Payment Balance</a></li>
                         </ul>
@@ -84,11 +84,11 @@
             <div class="col-12" style="overflow-x: auto;">
                 <div class="card">
                     <div class="card-header">
-                        Documentation Role Admin
+                        Documentation Role Instructor
                     </div>
                     <div class="card-body">
-                        <h3 class="text-center">Route Course</h3>
-                        <h5>Get All Course :</h5>
+                        <h3 class="text-center">Route Home Page</h3>
+                        <h5>Get All Courses :</h5>
                         <!-- Table Route -->
                         <table class="table table-bordered border-secondary">
                             <thead>
@@ -101,7 +101,7 @@
                             <tbody>
                                 <tr>
                                     <td>GET</td>
-                                    <td>https://api.vocasia.pasia.id/admin/courses</td>
+                                    <td>https://api.vocasia.pasia.id/homepage/courses</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -145,7 +145,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Get Course By Id :</h5>
+                        <h5>Get Detail Course :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -157,7 +157,7 @@
                             <tbody>
                                 <tr>
                                     <td>GET</td>
-                                    <td>https://api.vocasia.pasia.id/admin/course/1</td>
+                                    <td>https://api.vocasia.pasia.id/homepage/course/21</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -199,7 +199,224 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Create Data Course :</h5>
+                        <h5>Get Course Detail Instructor :</h5>
+                        <table class="table table-bordered border-secondary">
+                            <thead>
+                                <tr class="table-light table-bordered border-secondary">
+                                    <th scope="col">Method</th>
+                                    <th scope="col">Url</th>
+                                    <th scope="col">Request Format</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>GET</td>
+                                    <td>https://api.vocasia.pasia.id/homepage/course/detail/instructor/22</td>
+                                    <td>Json</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- End Table Route -->
+                        <div class="row">
+                            <div class="col text-center">
+                                <h5>Response :</h5>
+                            </div>
+                        </div>
+                        <!-- Table Response -->
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <table class="table table-bordered border-secondary">
+                                    <thead>
+                                        <tr class="table-light table-bordered border-secondary">
+                                            <th scope="col">Body</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>{</p>
+                                                <p class="px-5">
+                                                    <label class="text-danger">"status"</label> : <label
+                                                        class="text-success">200</label>,<br>
+                                                    <label class="text-danger">"error"</label> : <label
+                                                        class="text-primary">false</label>,<br>
+                                                    <label class="text-danger">"data"</label> : <label
+                                                        class="text-primary">[ $data ]</label>,
+                                                </p>
+                                                <p>}</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- End Table Response -->
+
+                        <!-- Table Route -->
+                        <h5>Get Course Rating :</h5>
+                        <table class="table table-bordered border-secondary">
+                            <thead>
+                                <tr class="table-light table-bordered border-secondary">
+                                    <th scope="col">Method</th>
+                                    <th scope="col">Url</th>
+                                    <th scope="col">Request Format</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>GET</td>
+                                    <td>https://api.vocasia.pasia.id/homepage/course/rating/25</td>
+                                    <td>Json</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- End Table Route -->
+                        <div class="row">
+                            <div class="col text-center">
+                                <h5>Response :</h5>
+                            </div>
+                        </div>
+                        <!-- Table Response -->
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <table class="table table-bordered border-secondary">
+                                    <thead>
+                                        <tr class="table-light table-bordered border-secondary">
+                                            <th scope="col">Body</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>{</p>
+                                                <p class="px-5">
+                                                    <label class="text-danger">"status"</label> : <label
+                                                        class="text-success">200</label>,<br>
+                                                    <label class="text-danger">"error"</label> : <label
+                                                        class="text-primary">false</label>,<br>
+                                                    <label class="text-danger">"data"</label> : <label
+                                                        class="text-primary">[ $data ]</label>,
+                                                </p>
+                                                <p>}</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- End Table Response -->
+
+                        <!-- Table Route -->
+                        <h5>Get All Categories :</h5>
+                        <table class="table table-bordered border-secondary">
+                            <thead>
+                                <tr class="table-light table-bordered border-secondary">
+                                    <th scope="col">Method</th>
+                                    <th scope="col">Url</th>
+                                    <th scope="col">Request Format</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>GET</td>
+                                    <td>https://api.vocasia.pasia.id/homepage/categories</td>
+                                    <td>Json</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- End Table Route -->
+                        <div class="row">
+                            <div class="col text-center">
+                                <h5>Response :</h5>
+                            </div>
+                        </div>
+                        <!-- Table Response -->
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <table class="table table-bordered border-secondary">
+                                    <thead>
+                                        <tr class="table-light table-bordered border-secondary">
+                                            <th scope="col">Body</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>{</p>
+                                                <p class="px-5">
+                                                    <label class="text-danger">"status"</label> : <label
+                                                        class="text-success">200</label>,<br>
+                                                    <label class="text-danger">"error"</label> : <label
+                                                        class="text-primary">false</label>,<br>
+                                                    <label class="text-danger">"data"</label> : <label
+                                                        class="text-primary">[ $data ]</label>,
+                                                </p>
+                                                <p>}</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- End Table Response -->
+
+                        <!-- Table Route -->
+                        <h5>Get Carts List :</h5>
+                        <table class="table table-bordered border-secondary">
+                            <thead>
+                                <tr class="table-light table-bordered border-secondary">
+                                    <th scope="col">Method</th>
+                                    <th scope="col">Url</th>
+                                    <th scope="col">Request Format</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>GET</td>
+                                    <td>https://api.vocasia.pasia.id/homepage/carts/21</td>
+                                    <td>Json</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- End Table Route -->
+
+                        <div class="row">
+                            <div class="col text-center">
+                                <h5>Response :</h5>
+                            </div>
+                        </div>
+                        <!-- Table Response -->
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <table class="table table-bordered border-secondary">
+                                    <thead>
+                                        <tr class="table-light table-bordered border-secondary">
+                                            <th scope="col">Body</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>{</p>
+                                                <p class="px-5">
+                                                    <label class="text-danger">"status"</label> : <label
+                                                        class="text-success">200</label>,<br>
+                                                    <label class="text-danger">"error"</label> : <label
+                                                        class="text-primary">false</label>,<br>
+                                                    <label class="text-danger">"data"</label> : <label
+                                                        class="text-primary">[ $data ]</label>,
+                                                </p>
+                                                <p>}</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- End Table Response -->
+
+                        <!-- Table Route -->
+                        <h5>Add Carts :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -211,7 +428,7 @@
                             <tbody>
                                 <tr>
                                     <td>POST</td>
-                                    <td>https://api.vocasia.pasia.id/admin/course</td>
+                                    <td>https://api.vocasia.pasia.id/homepage/add-to-cart</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -236,62 +453,12 @@
                                             <td>
                                                 <p>{</p>
                                                 <p class="px-5">
-                                                    <label class="text-danger">"title"</label> : <label
-                                                        class="text-primary">"Web Programming"</label>,<br>
-                                                    <label class="text-danger">"short_description"</label> : <label
-                                                        class="text-primary">"this is
-                                                        short_description"</label>,<br>
-                                                    <label class="text-danger">"description"</label> : <label
-                                                        class="text-primary">"this is description"</label>,<br>
-                                                    <label class="text-danger">"bio_instructor"</label> : <label
-                                                        class="text-primary">"this is bio instructor"</label>,<br>
-                                                    <label class="text-danger">"bio_status"</label> : <label
-                                                        class="text-primary">"1"</label>,<br>
-                                                    <label class="text-danger">"outcomes"</label> : <label
-                                                        class="text-primary">"this is outcomes"</label>,<br>
-                                                    <label class="text-danger">"language"</label> : <label
-                                                        class="text-primary">"english"</label>,<br>
-                                                    <label class="text-danger">"category_id"</label> : <label
-                                                        class="text-primary">"22"</label>,<br>
-                                                    <label class="text-danger">"sub_category_id"</label> : <label
-                                                        class="text-primary">"5"</label>,<br>
-                                                    <label class="text-danger">"section"</label> : <label
-                                                        class="text-primary">"this section"</label>,<br>
-                                                    <label class="text-danger">"requirement"</label> : <label
-                                                        class="text-primary">"this is requirement"</label>,<br>
-                                                    <label class="text-danger">"price"</label> : <label
-                                                        class="text-primary">"20000"</label>,<br>
-                                                    <label class="text-danger">"discount_flag"</label> : <label
-                                                        class="text-primary">"10"</label>,<br>
-                                                    <label class="text-danger">"discount_price"</label> : <label
-                                                        class="text-primary">"10"</label>,<br>
-                                                    <label class="text-danger">"level_course"</label> : <label
-                                                        class="text-primary">"high"</label>,<br>
-                                                    <label class="text-danger">"user_id"</label> : <label
-                                                        class="text-primary">"2"</label>,<br>
-                                                    <label class="text-danger">"thumbnail"</label> : <label
-                                                        class="text-primary">"this is thimbnail"</label>,<br>
-                                                    <label class="text-danger">"visibility"</label> : <label
-                                                        class="text-primary">"this is visibility"</label>,<br>
-                                                    <label class="text-danger">"is_top_course"</label> : <label
-                                                        class="text-primary">"this top course"</label>,<br>
-                                                    <label class="text-danger">"is_admin"</label> : <label
-                                                        class="text-primary">"1"</label>,<br>
-                                                    <label class="text-danger">"status_course"</label> : <label
-                                                        class="text-primary">"long"</label>,<br>
-                                                    <label class="text-danger">"course_overview_provider"</label> :
-                                                    <label class="text-primary">"overview provider"</label>,<br>
-                                                    <label class="text-danger">"meta_keyword"</label> : <label
-                                                        class="text-primary">"this is meta keyword"</label>,<br>
-                                                    <label class="text-danger">"meta_description"</label> : <label
-                                                        class="text-primary">"this is meta
-                                                        description"</label>,<br>
-                                                    <label class="text-danger">"is_free_course"</label> : <label
-                                                        class="text-primary">"1"</label>,<br>
-                                                    <label class="text-danger">"is_prakerja"</label> : <label
-                                                        class="text-primary">"0"</label>,<br>
-                                                    <label class="text-danger">"instructor_revenue"</label> : <label
-                                                        class="text-primary">"1"</label>
+                                                    <label class="text-danger">"id_users"</label> : <label
+                                                        class="text-primary">"127"</label>,<br>
+                                                    <label class="text-danger">"cart_item"</label> : <label
+                                                        class="text-primary">"this cart item"</label>,<br>
+                                                    <label class="text-danger">"cart_price"</label> : <label
+                                                        class="text-primary">"20000"</label>
                                                 </p>
                                                 <p>}</p>
                                             </td>
@@ -341,207 +508,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Update Data Course :</h5>
-                        <table class="table table-bordered border-secondary">
-                            <thead>
-                                <tr class="table-light table-bordered border-secondary">
-                                    <th scope="col">Method</th>
-                                    <th scope="col">Url</th>
-                                    <th scope="col">Request Format</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>PUT</td>
-                                    <td>https://api.vocasia.pasia.id/admin/course/258</td>
-                                    <td>Json</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <!-- End Table Route -->
-                        <div class="row">
-                            <div class="col text-center">
-                                <h5>Request Parameter :</h5>
-                            </div>
-                        </div>
-                        <!-- Table Parameter -->
-                        <div class="row justify-content-center">
-                            <div class="col-8">
-                                <table class="table table-bordered border-secondary">
-                                    <thead>
-                                        <tr class="table-light table-bordered border-secondary">
-                                            <th scope="col">Body</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <p>{</p>
-                                                <p class="px-5">
-                                                    <label class="text-danger">"title"</label> : <label
-                                                        class="text-primary">"learn Web Programming"</label>,<br>
-                                                    <label class="text-danger">"short_description"</label> : <label
-                                                        class="text-primary">"this is
-                                                        short_description"</label>,<br>
-                                                    <label class="text-danger">"description"</label> : <label
-                                                        class="text-primary">"this is description"</label>,<br>
-                                                    <label class="text-danger">"bio_instructor"</label> : <label
-                                                        class="text-primary">"this is bio instructor"</label>,<br>
-                                                    <label class="text-danger">"bio_status"</label> : <label
-                                                        class="text-primary">"1"</label>,<br>
-                                                    <label class="text-danger">"outcomes"</label> : <label
-                                                        class="text-primary">"this is outcomes"</label>,<br>
-                                                    <label class="text-danger">"language"</label> : <label
-                                                        class="text-primary">"english"</label>,<br>
-                                                    <label class="text-danger">"category_id"</label> : <label
-                                                        class="text-primary">"22"</label>,<br>
-                                                    <label class="text-danger">"sub_category_id"</label> : <label
-                                                        class="text-primary">"5"</label>,<br>
-                                                    <label class="text-danger">"section"</label> : <label
-                                                        class="text-primary">"this section"</label>,<br>
-                                                    <label class="text-danger">"requirement"</label> : <label
-                                                        class="text-primary">"this is requirement"</label>,<br>
-                                                    <label class="text-danger">"price"</label> : <label
-                                                        class="text-primary">"20000"</label>,<br>
-                                                    <label class="text-danger">"discount_flag"</label> : <label
-                                                        class="text-primary">"10"</label>,<br>
-                                                    <label class="text-danger">"discount_price"</label> : <label
-                                                        class="text-primary">"10"</label>,<br>
-                                                    <label class="text-danger">"level_course"</label> : <label
-                                                        class="text-primary">"high"</label>,<br>
-                                                    <label class="text-danger">"user_id"</label> : <label
-                                                        class="text-primary">"2"</label>,<br>
-                                                    <label class="text-danger">"thumbnail"</label> : <label
-                                                        class="text-primary">"this is thimbnail"</label>,<br>
-                                                    <label class="text-danger">"visibility"</label> : <label
-                                                        class="text-primary">"this is visibility"</label>,<br>
-                                                    <label class="text-danger">"is_top_course"</label> : <label
-                                                        class="text-primary">"this top course"</label>,<br>
-                                                    <label class="text-danger">"is_admin"</label> : <label
-                                                        class="text-primary">"1"</label>,<br>
-                                                    <label class="text-danger">"status_course"</label> : <label
-                                                        class="text-primary">"long"</label>,<br>
-                                                    <label class="text-danger">"course_overview_provider"</label> :
-                                                    <label class="text-primary">"overview provider"</label>,<br>
-                                                    <label class="text-danger">"meta_keyword"</label> : <label
-                                                        class="text-primary">"this is meta keyword"</label>,<br>
-                                                    <label class="text-danger">"meta_description"</label> : <label
-                                                        class="text-primary">"this is meta
-                                                        description"</label>,<br>
-                                                    <label class="text-danger">"is_free_course"</label> : <label
-                                                        class="text-primary">"1"</label>,<br>
-                                                    <label class="text-danger">"is_prakerja"</label> : <label
-                                                        class="text-primary">"0"</label>,<br>
-                                                    <label class="text-danger">"instructor_revenue"</label> : <label
-                                                        class="text-primary">"1"</label>
-                                                </p>
-                                                <p>}</p>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <!-- End Table Parameter -->
-
-                        <div class="row">
-                            <div class="col text-center">
-                                <h5>Response :</h5>
-                            </div>
-                        </div>
-                        <!-- Table Response -->
-                        <div class="row justify-content-center">
-                            <div class="col-8">
-                                <table class="table table-bordered border-secondary">
-                                    <thead>
-                                        <tr class="table-light table-bordered border-secondary">
-                                            <th scope="col">Body</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <p>{</p>
-                                                <p class="px-5">
-                                                    <label class="text-danger">"status"</label> : <label
-                                                        class="text-success">200</label>,<br>
-                                                    <label class="text-danger">"error"</label> : <label
-                                                        class="text-primary">false</label>,<br>
-                                                    <label class="text-danger">"data"</label> : <label>[</label><br>
-                                                    <label class="text-danger p-3">"messages"</label> : <label
-                                                        class="text-primary">"data successfull
-                                                        updated"</label>,<br><label>]</label>
-
-                                                </p>
-                                                <p>}</p>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <!-- End Table Response -->
-
-                        <!-- Table Route -->
-                        <h5>Delete Data Course :</h5>
-                        <table class="table table-bordered border-secondary">
-                            <thead>
-                                <tr class="table-light table-bordered border-secondary">
-                                    <th scope="col">Method</th>
-                                    <th scope="col">Url</th>
-                                    <th scope="col">Request Format</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>DELETE</td>
-                                    <td>https://api.vocasia.pasia.id/admin/course/258</td>
-                                    <td>Json</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <!-- End Table Route -->
-
-                        <div class="row">
-                            <div class="col text-center">
-                                <h5>Response :</h5>
-                            </div>
-                        </div>
-                        <!-- Table Response -->
-                        <div class="row justify-content-center">
-                            <div class="col-8">
-                                <table class="table table-bordered border-secondary">
-                                    <thead>
-                                        <tr class="table-light table-bordered border-secondary">
-                                            <th scope="col">Body</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <p>{</p>
-                                                <p class="px-5">
-                                                    <label class="text-danger">"status"</label> : <label
-                                                        class="text-success">200</label>,<br>
-                                                    <label class="text-danger">"error"</label> : <label
-                                                        class="text-primary">false</label>,<br>
-                                                    <label class="text-danger">"data"</label> : <label>[</label><br>
-                                                    <label class="text-danger p-3">"messages"</label> : <label
-                                                        class="text-primary">"data successfull
-                                                        deleted"</label>,<br><label>]</label>
-
-                                                </p>
-                                                <p>}</p>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <!-- End Table Response -->
-
-                        <h5>Get Course Info :</h5>
-                        <!-- Table Route -->
+                        <h5>Get Filter :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -553,7 +520,7 @@
                             <tbody>
                                 <tr>
                                     <td>GET</td>
-                                    <td>https://api.vocasia.pasia.id/admin/course/info</td>
+                                    <td>https://api.vocasia.pasia.id/homepage/filter</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -565,7 +532,6 @@
                                 <h5>Response :</h5>
                             </div>
                         </div>
-
                         <!-- Table Response -->
                         <div class="row justify-content-center">
                             <div class="col-8">
@@ -597,7 +563,172 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Create Course Thumbnail :</h5>
+                        <h5>Get Section :</h5>
+                        <table class="table table-bordered border-secondary">
+                            <thead>
+                                <tr class="table-light table-bordered border-secondary">
+                                    <th scope="col">Method</th>
+                                    <th scope="col">Url</th>
+                                    <th scope="col">Request Format</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>GET</td>
+                                    <td>https://api.vocasia.pasia.id/homepage/section/11</td>
+                                    <td>Json</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- End Table Route -->
+
+                        <div class="row">
+                            <div class="col text-center">
+                                <h5>Response :</h5>
+                            </div>
+                        </div>
+                        <!-- Table Response -->
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <table class="table table-bordered border-secondary">
+                                    <thead>
+                                        <tr class="table-light table-bordered border-secondary">
+                                            <th scope="col">Body</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>{</p>
+                                                <p class="px-5">
+                                                    <label class="text-danger">"status"</label> : <label
+                                                        class="text-success">200</label>,<br>
+                                                    <label class="text-danger">"error"</label> : <label
+                                                        class="text-primary">false</label>,<br>
+                                                    <label class="text-danger">"data"</label> : <label
+                                                        class="text-primary">[ $data ]</label>,
+                                                </p>
+                                                <p>}</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- End Table Response -->
+
+                        <!-- Table Route -->
+                        <h5>Get Users Info :</h5>
+                        <table class="table table-bordered border-secondary">
+                            <thead>
+                                <tr class="table-light table-bordered border-secondary">
+                                    <th scope="col">Method</th>
+                                    <th scope="col">Url</th>
+                                    <th scope="col">Request Format</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>GET</td>
+                                    <td>https://api.vocasia.pasia.id/homepage/users-info/22</td>
+                                    <td>Json</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- End Table Route -->
+
+                        <div class="row">
+                            <div class="col text-center">
+                                <h5>Response :</h5>
+                            </div>
+                        </div>
+                        <!-- Table Response -->
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <table class="table table-bordered border-secondary">
+                                    <thead>
+                                        <tr class="table-light table-bordered border-secondary">
+                                            <th scope="col">Body</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>{</p>
+                                                <p class="px-5">
+                                                    <label class="text-danger">"status"</label> : <label
+                                                        class="text-success">200</label>,<br>
+                                                    <label class="text-danger">"error"</label> : <label
+                                                        class="text-primary">false</label>,<br>
+                                                    <label class="text-danger">"data"</label> : <label
+                                                        class="text-primary">[ $data ]</label>,
+                                                </p>
+                                                <p>}</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- End Table Response -->
+
+                        <!-- Table Route -->
+                        <h5>Get Wishlist :</h5>
+                        <table class="table table-bordered border-secondary">
+                            <thead>
+                                <tr class="table-light table-bordered border-secondary">
+                                    <th scope="col">Method</th>
+                                    <th scope="col">Url</th>
+                                    <th scope="col">Request Format</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>GET</td>
+                                    <td>https://api.vocasia.pasia.id/homepage/wishlist</td>
+                                    <td>Json</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- End Table Route -->
+
+                        <div class="row">
+                            <div class="col text-center">
+                                <h5>Response :</h5>
+                            </div>
+                        </div>
+                        <!-- Table Response -->
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <table class="table table-bordered border-secondary">
+                                    <thead>
+                                        <tr class="table-light table-bordered border-secondary">
+                                            <th scope="col">Body</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>{</p>
+                                                <p class="px-5">
+                                                    <label class="text-danger">"status"</label> : <label
+                                                        class="text-success">200</label>,<br>
+                                                    <label class="text-danger">"error"</label> : <label
+                                                        class="text-primary">false</label>,<br>
+                                                    <label class="text-danger">"data"</label> : <label
+                                                        class="text-primary">[ $data ]</label>,
+                                                </p>
+                                                <p>}</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- End Table Response -->
+
+                        <!-- Table Route -->
+                        <h5>Add to Wishlist :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -609,8 +740,8 @@
                             <tbody>
                                 <tr>
                                     <td>POST</td>
-                                    <td>https://api.vocasia.pasia.id/admin/course-thumbnail/110</td>
-                                    <td>Masih salah</td>
+                                    <td>https://api.vocasia.pasia.id/homepage/wishlist</td>
+                                    <td>Json</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -632,29 +763,15 @@
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <p>* form-data</p>
-                                                <table class="table table-bordered border-secondary">
-                                                    <thead>
-                                                        <tr class="table-bordered border-secondary">
-                                                            <th scope="col" class="text-secondary">KEY</th>
-                                                            <th scope="col" class="text-secondary">VALUE</th>
-                                                            <th scope="col" class="text-secondary">DESCRIPTION</th>
-                                                        </tr>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>thumbnail
-                                                            </td>
-                                                            <td>
-                                                                <button type="button"
-                                                                    class="btn btn-outline-secondary btn-sm"
-                                                                    disabled>thumbnail.jpg <label
-                                                                        class="px-1"></label>x</button>
-                                                            </td>
-                                                            <td> </td>
-                                                        </tr>
-                                                    </tbody>
-                                                    </thead>
-                                                </table>
+                                                <p>{</p>
+                                                <p class="px-5">
+                                                    <label class="text-danger">"id_user"</label> : <label
+                                                        class="text-primary">"125"</label>,<br>
+                                                    <label class="text-danger">"wishlist_item"</label> : <label
+                                                        class="text-primary">"this wishlist
+                                                        item"</label>
+                                                </p>
+                                                <p>}</p>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -662,6 +779,103 @@
                             </div>
                         </div>
                         <!-- End Table Parameter -->
+
+                        <div class="row">
+                            <div class="col text-center">
+                                <h5>Response :</h5>
+                            </div>
+                        </div>
+                        <!-- Table Response -->
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <table class="table table-bordered border-secondary">
+                                    <thead>
+                                        <tr class="table-light table-bordered border-secondary">
+                                            <th scope="col">Body</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>{</p>
+                                                <p class="px-5">
+                                                    <label class="text-danger">"status"</label> : <label
+                                                        class="text-success">201</label>,<br>
+                                                    <label class="text-danger">"error"</label> : <label
+                                                        class="text-primary">false</label>,<br>
+                                                    <label class="text-danger">"data"</label> : <label>[</label><br>
+                                                    <label class="text-danger p-3">"messages"</label> : <label
+                                                        class="text-primary">"data
+                                                        successfull
+                                                        created"</label>,<br><label>]</label>
+                                                </p>
+                                                <p>}</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- End Table Response -->
+
+                        <!-- Table Route -->
+                        <h5>Delete Data Wishlist :</h5>
+                        <table class="table table-bordered border-secondary">
+                            <thead>
+                                <tr class="table-light table-bordered border-secondary">
+                                    <th scope="col">Method</th>
+                                    <th scope="col">Url</th>
+                                    <th scope="col">Request Format</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>DELETE</td>
+                                    <td>https://api.vocasia.pasia.id/home_page/wishlist/delete/255</td>
+                                    <td>Json</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- End Table Route -->
+
+                        <div class="row">
+                            <div class="col text-center">
+                                <h5>Response :</h5>
+                            </div>
+                        </div>
+                        <!-- Table Response -->
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <table class="table table-bordered border-secondary">
+                                    <thead>
+                                        <tr class="table-light table-bordered border-secondary">
+                                            <th scope="col">Body</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>{</p>
+                                                <p class="px-5">
+                                                    <label class="text-danger">"status"</label> : <label
+                                                        class="text-success">200</label>,<br>
+                                                    <label class="text-danger">"error"</label> : <label
+                                                        class="text-primary">false</label>,<br>
+                                                    <label class="text-danger">"data"</label> : <label>[</label><br>
+                                                    <label class="text-danger p-3">"messages"</label> : <label
+                                                        class="text-primary">"data
+                                                        successfull
+                                                        deleted"</label>,<br><label>]</label>
+
+                                                </p>
+                                                <p>}</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- End Table Response -->
                     </div>
                 </div>
             </div>

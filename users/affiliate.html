@@ -53,10 +53,10 @@
                             Instructor
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="dashboard_instructor.html">Dashboard
+                            <li><a class="dropdown-item" href="../instructor/dashboard_instructor.html">Dashboard
                                     Instructor</a></li>
-                            <li><a class="dropdown-item" href="home_page.html">Home Page</a></li>
-                            <li><a class="dropdown-item" href="lesson.html">Lesson</a></li>
+                            <li><a class="dropdown-item" href="../instructor/home_page.html">Home Page</a></li>
+                            <li><a class="dropdown-item" href="../instructor/lesson.html">Lesson</a></li>
                             <li><a class="dropdown-item" href="#">Question</a></li>
                             <li><a class="dropdown-item" href="#">Payment Balance</a></li>
                         </ul>
@@ -67,8 +67,8 @@
                             Users
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="../users/users.html">Users Profil</a>
-                            <li><a class="dropdown-item" href="../users/affiliate.html">Users Afiliate</a>
+                            <li><a class="dropdown-item" href="users.html">Users Profil</a>
+                            <li><a class="dropdown-item" href="affiliate.html">Users Afiliate</a>
                             </li>
                         </ul>
                     </li>
@@ -84,11 +84,11 @@
             <div class="col-12" style="overflow-x: auto;">
                 <div class="card">
                     <div class="card-header">
-                        Documentation Role Instructor
+                        Documentation Role Affiliate
                     </div>
                     <div class="card-body">
-                        <h3 class="text-center">Route Dashboard Instructor</h3>
-                        <h5>Get All Dashboard Instructor :</h5>
+                        <h3 class="text-center">Route Affiliate</h3>
+                        <h5>Get Dashboard Affiliate :</h5>
                         <!-- Table Route -->
                         <table class="table table-bordered border-secondary">
                             <thead>
@@ -101,7 +101,7 @@
                             <tbody>
                                 <tr>
                                     <td>GET</td>
-                                    <td>https://api.vocasia.pasia.id/instructor/dashboard-instructors</td>
+                                    <td>https://api.vocasia.pasia.id/affiliate/dashboard-affiliate/887</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -145,7 +145,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Get Dashboard Instructor By Id :</h5>
+                        <h5>Get Komisi Affiliate :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -157,7 +157,7 @@
                             <tbody>
                                 <tr>
                                     <td>GET</td>
-                                    <td>https://api.vocasia.pasia.id/instructor/dashboard-instructor/1</td>
+                                    <td>https://api.vocasia.pasia.id/affiliate/komisi-affiliate/221</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -199,7 +199,277 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Create Data Dashboard Instructor :</h5>
+                        <h5>Get Courses Affiliate :</h5>
+                        <table class="table table-bordered border-secondary">
+                            <thead>
+                                <tr class="table-light table-bordered border-secondary">
+                                    <th scope="col">Method</th>
+                                    <th scope="col">Url</th>
+                                    <th scope="col">Request Format</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>GET</td>
+                                    <td>https://api.vocasia.pasia.id/affiliate/courses</td>
+                                    <td>Json</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- End Table Route -->
+                        <div class="row">
+                            <div class="col text-center">
+                                <h5>Response :</h5>
+                            </div>
+                        </div>
+                        <!-- Table Response -->
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <table class="table table-bordered border-secondary">
+                                    <thead>
+                                        <tr class="table-light table-bordered border-secondary">
+                                            <th scope="col">Body</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>{</p>
+                                                <p class="px-5">
+                                                    <label class="text-danger">"status"</label> : <label
+                                                        class="text-success">200</label>,<br>
+                                                    <label class="text-danger">"error"</label> : <label
+                                                        class="text-primary">false</label>,<br>
+                                                    <label class="text-danger">"data"</label> : <label
+                                                        class="text-primary">[ $data ]</label>,
+                                                </p>
+                                                <p>}</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- End Table Response -->
+
+                        <!-- Table Route -->
+                        <h5>Get Link Courses :</h5>
+                        <table class="table table-bordered border-secondary">
+                            <thead>
+                                <tr class="table-light table-bordered border-secondary">
+                                    <th scope="col">Method</th>
+                                    <th scope="col">Url</th>
+                                    <th scope="col">Request Format</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>GET</td>
+                                    <td>https://api.vocasia.pasia.id/affiliate/courses/991</td>
+                                    <td>Json</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- End Table Route -->
+                        <div class="row">
+                            <div class="col text-center">
+                                <h5>Response :</h5>
+                            </div>
+                        </div>
+                        <!-- Table Response -->
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <table class="table table-bordered border-secondary">
+                                    <thead>
+                                        <tr class="table-light table-bordered border-secondary">
+                                            <th scope="col">Body</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>{</p>
+                                                <p class="px-5">
+                                                    <label class="text-danger">"status"</label> : <label
+                                                        class="text-success">200</label>,<br>
+                                                    <label class="text-danger">"error"</label> : <label
+                                                        class="text-primary">false</label>,<br>
+                                                    <label class="text-danger">"data"</label> : <label
+                                                        class="text-primary">[ $data ]</label>,
+                                                </p>
+                                                <p>}</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- End Table Response -->
+
+                        <!-- Table Route -->
+                        <h5>Get Access :</h5>
+                        <table class="table table-bordered border-secondary">
+                            <thead>
+                                <tr class="table-light table-bordered border-secondary">
+                                    <th scope="col">Method</th>
+                                    <th scope="col">Url</th>
+                                    <th scope="col">Request Format</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>GET</td>
+                                    <td>https://api.vocasia.pasia.id/affiliate/access/61</td>
+                                    <td>Json</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- End Table Route -->
+                        <div class="row">
+                            <div class="col text-center">
+                                <h5>Response :</h5>
+                            </div>
+                        </div>
+                        <!-- Table Response -->
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <table class="table table-bordered border-secondary">
+                                    <thead>
+                                        <tr class="table-light table-bordered border-secondary">
+                                            <th scope="col">Body</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>{</p>
+                                                <p class="px-5">
+                                                    <label class="text-danger">"status"</label> : <label
+                                                        class="text-success">200</label>,<br>
+                                                    <label class="text-danger">"error"</label> : <label
+                                                        class="text-primary">false</label>,<br>
+                                                    <label class="text-danger">"data"</label> : <label
+                                                        class="text-primary">[ $data ]</label>,
+                                                </p>
+                                                <p>}</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- End Table Response -->
+
+                        <!-- Table Route -->
+                        <h5>Get Saldo :</h5>
+                        <table class="table table-bordered border-secondary">
+                            <thead>
+                                <tr class="table-light table-bordered border-secondary">
+                                    <th scope="col">Method</th>
+                                    <th scope="col">Url</th>
+                                    <th scope="col">Request Format</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>GET</td>
+                                    <td>https://api.vocasia.pasia.id/affiliate/saldo/76</td>
+                                    <td>Json</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- End Table Route -->
+                        <div class="row">
+                            <div class="col text-center">
+                                <h5>Response :</h5>
+                            </div>
+                        </div>
+                        <!-- Table Response -->
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <table class="table table-bordered border-secondary">
+                                    <thead>
+                                        <tr class="table-light table-bordered border-secondary">
+                                            <th scope="col">Body</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>{</p>
+                                                <p class="px-5">
+                                                    <label class="text-danger">"status"</label> : <label
+                                                        class="text-success">200</label>,<br>
+                                                    <label class="text-danger">"error"</label> : <label
+                                                        class="text-primary">false</label>,<br>
+                                                    <label class="text-danger">"data"</label> : <label
+                                                        class="text-primary">[ $data ]</label>,
+                                                </p>
+                                                <p>}</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- End Table Response -->
+
+                        <!-- Table Route -->
+                        <h5>Get Subscription :</h5>
+                        <table class="table table-bordered border-secondary">
+                            <thead>
+                                <tr class="table-light table-bordered border-secondary">
+                                    <th scope="col">Method</th>
+                                    <th scope="col">Url</th>
+                                    <th scope="col">Request Format</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>GET</td>
+                                    <td>https://api.vocasia.pasia.id/affiliate/subscription/108</td>
+                                    <td>Json</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- End Table Route -->
+                        <div class="row">
+                            <div class="col text-center">
+                                <h5>Response :</h5>
+                            </div>
+                        </div>
+                        <!-- Table Response -->
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <table class="table table-bordered border-secondary">
+                                    <thead>
+                                        <tr class="table-light table-bordered border-secondary">
+                                            <th scope="col">Body</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>{</p>
+                                                <p class="px-5">
+                                                    <label class="text-danger">"status"</label> : <label
+                                                        class="text-success">200</label>,<br>
+                                                    <label class="text-danger">"error"</label> : <label
+                                                        class="text-primary">false</label>,<br>
+                                                    <label class="text-danger">"data"</label> : <label
+                                                        class="text-primary">[ $data ]</label>,
+                                                </p>
+                                                <p>}</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- End Table Response -->
+
+                        <!-- Table Route -->
+                        <h5>Add Affiliate :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -211,7 +481,7 @@
                             <tbody>
                                 <tr>
                                     <td>POST</td>
-                                    <td>https://api.vocasia.pasia.id/instructor/dashboard-instructor</td>
+                                    <td>https://api.vocasia.pasia.id/affiliate/add-affiliate</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -236,60 +506,14 @@
                                             <td>
                                                 <p>{</p>
                                                 <p class="px-5">
-                                                    <label class="text-danger">"title"</label> : <label
-                                                        class="text-primary">"Web Programming"</label>,<br>
-                                                    <label class="text-danger">"short_description"</label> : <label
-                                                        class="text-primary">"this is short_description"</label>,<br>
-                                                    <label class="text-danger">"description"</label> : <label
-                                                        class="text-primary">"this is description"</label>,<br>
-                                                    <label class="text-danger">"bio_instructor"</label> : <label
-                                                        class="text-primary">"this is bio instructor"</label>,<br>
-                                                    <label class="text-danger">"bio_status"</label> : <label
-                                                        class="text-primary">"1"</label>,<br>
-                                                    <label class="text-danger">"outcomes"</label> : <label
-                                                        class="text-primary">"this is outcomes"</label>,<br>
-                                                    <label class="text-danger">"language"</label> : <label
-                                                        class="text-primary">"english"</label>,<br>
-                                                    <label class="text-danger">"category_id"</label> : <label
-                                                        class="text-primary">"22"</label>,<br>
-                                                    <label class="text-danger">"sub_category_id"</label> : <label
-                                                        class="text-primary">"5"</label>,<br>
-                                                    <label class="text-danger">"section"</label> : <label
-                                                        class="text-primary">"this section"</label>,<br>
-                                                    <label class="text-danger">"requirement"</label> : <label
-                                                        class="text-primary">"this is requirement"</label>,<br>
-                                                    <label class="text-danger">"price"</label> : <label
-                                                        class="text-primary">"20000"</label>,<br>
-                                                    <label class="text-danger">"discount_flag"</label> : <label
-                                                        class="text-primary">"10"</label>,<br>
-                                                    <label class="text-danger">"discount_price"</label> : <label
-                                                        class="text-primary">"10"</label>,<br>
-                                                    <label class="text-danger">"level_course"</label> : <label
-                                                        class="text-primary">"high"</label>,<br>
                                                     <label class="text-danger">"user_id"</label> : <label
-                                                        class="text-primary">"2"</label>,<br>
-                                                    <label class="text-danger">"thumbnail"</label> : <label
-                                                        class="text-primary">"this is thimbnail"</label>,<br>
-                                                    <label class="text-danger">"visibility"</label> : <label
-                                                        class="text-primary">"this is visibility"</label>,<br>
-                                                    <label class="text-danger">"is_top_course"</label> : <label
-                                                        class="text-primary">"this top course"</label>,<br>
-                                                    <label class="text-danger">"is_admin"</label> : <label
-                                                        class="text-primary">"1"</label>,<br>
-                                                    <label class="text-danger">"status_course"</label> : <label
-                                                        class="text-primary">"long"</label>,<br>
-                                                    <label class="text-danger">"course_overview_provider"</label> :
-                                                    <label class="text-primary">"overview provider"</label>,<br>
-                                                    <label class="text-danger">"meta_keyword"</label> : <label
-                                                        class="text-primary">"this is meta keyword"</label>,<br>
-                                                    <label class="text-danger">"meta_description"</label> : <label
-                                                        class="text-primary">"this is meta description"</label>,<br>
-                                                    <label class="text-danger">"is_free_course"</label> : <label
-                                                        class="text-primary">"1"</label>,<br>
-                                                    <label class="text-danger">"is_prakerja"</label> : <label
+                                                        class="text-primary">"654"</label>,<br>
+                                                    <label class="text-danger">"leader"</label> : <label
                                                         class="text-primary">"0"</label>,<br>
-                                                    <label class="text-danger">"instructor_revenue"</label> : <label
-                                                        class="text-primary">"1"</label>
+                                                    <label class="text-danger">"co_leader"</label> : <label
+                                                        class="text-primary">"0"</label>,<br>
+                                                    <label class="text-danger">"is_active"</label> : <label
+                                                        class="text-primary">"0"</label>
                                                 </p>
                                                 <p>}</p>
                                             </td>
@@ -339,7 +563,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Update Data Dashboard Instructor :</h5>
+                        <h5>Penarikan Saldo :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -350,8 +574,8 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>PUT</td>
-                                    <td>https://api.vocasia.pasia.id/instructor/dashboard-instructor/22</td>
+                                    <td>POST</td>
+                                    <td>https://api.vocasia.pasia.id/affiliate/saldo/654</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
@@ -376,61 +600,111 @@
                                             <td>
                                                 <p>{</p>
                                                 <p class="px-5">
-                                                    <label class="text-danger">"title"</label> : <label
-                                                        class="text-primary">"Learning Web Programming"</label>,<br>
-                                                    <label class="text-danger">"short_description"</label> : <label
-                                                        class="text-primary">"this is
-                                                        short_description"</label>,<br>
-                                                    <label class="text-danger">"description"</label> : <label
-                                                        class="text-primary">"this is description"</label>,<br>
-                                                    <label class="text-danger">"bio_instructor"</label> : <label
-                                                        class="text-primary">"this is bio instructor"</label>,<br>
-                                                    <label class="text-danger">"bio_status"</label> : <label
-                                                        class="text-primary">"1"</label>,<br>
-                                                    <label class="text-danger">"outcomes"</label> : <label
-                                                        class="text-primary">"this is outcomes"</label>,<br>
-                                                    <label class="text-danger">"language"</label> : <label
-                                                        class="text-primary">"english"</label>,<br>
-                                                    <label class="text-danger">"category_id"</label> : <label
-                                                        class="text-primary">"22"</label>,<br>
-                                                    <label class="text-danger">"sub_category_id"</label> : <label
-                                                        class="text-primary">"5"</label>,<br>
-                                                    <label class="text-danger">"section"</label> : <label
-                                                        class="text-primary">"this section"</label>,<br>
-                                                    <label class="text-danger">"requirement"</label> : <label
-                                                        class="text-primary">"this is requirement"</label>,<br>
-                                                    <label class="text-danger">"price"</label> : <label
-                                                        class="text-primary">"20000"</label>,<br>
-                                                    <label class="text-danger">"discount_flag"</label> : <label
-                                                        class="text-primary">"10"</label>,<br>
-                                                    <label class="text-danger">"discount_price"</label> : <label
-                                                        class="text-primary">"10"</label>,<br>
-                                                    <label class="text-danger">"level_course"</label> : <label
-                                                        class="text-primary">"high"</label>,<br>
+                                                    <label class="text-danger">"pb_nominal"</label> : <label
+                                                        class="text-primary">"60000"</label>,<br>
+                                                    <label class="text-danger">"pb_bank"</label> : <label
+                                                        class="text-primary">"3"</label>,<br>
+                                                    <label class="text-danger">"pb_norek"</label> : <label
+                                                        class="text-primary">"123123"</label>,<br>
+                                                    <label class="text-danger">"pb_on_behalf_of"</label> : <label
+                                                        class="text-primary">"this is on behalf"</label>,<br>
+                                                    <label class="text-danger">"pb_token"</label> : <label
+                                                        class="text-primary">"12345"</label>
+                                                </p>
+                                                <p>}</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- End Table Parameter -->
+
+                        <div class="row">
+                            <div class="col text-center">
+                                <h5>Response :</h5>
+                            </div>
+                        </div>
+                        <!-- Table Response -->
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <table class="table table-bordered border-secondary">
+                                    <thead>
+                                        <tr class="table-light table-bordered border-secondary">
+                                            <th scope="col">Body</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>{</p>
+                                                <p class="px-5">
+                                                    <label class="text-danger">"status"</label> : <label
+                                                        class="text-success">201</label>,<br>
+                                                    <label class="text-danger">"error"</label> : <label
+                                                        class="text-primary">false</label>,<br>
+                                                    <label class="text-danger">"data"</label> : <label>[</label><br>
+                                                    <label class="text-danger p-3">"messages"</label> : <label
+                                                        class="text-primary">"Permintaan penarikan saldo berhasil,
+                                                        menunggu proses.."</label>,<br><label>]</label>
+
+                                                </p>
+                                                <p>}</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- End Table Response -->
+
+                        <!-- Table Route -->
+                        <h5>Update Data Affiliate :</h5>
+                        <table class="table table-bordered border-secondary">
+                            <thead>
+                                <tr class="table-light table-bordered border-secondary">
+                                    <th scope="col">Method</th>
+                                    <th scope="col">Url</th>
+                                    <th scope="col">Request Format</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>PUT</td>
+                                    <td>https://api.vocasia.pasia.id/admin/affiliate/258</td>
+                                    <td>Json</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- End Table Route -->
+                        <div class="row">
+                            <div class="col text-center">
+                                <h5>Request Parameter :</h5>
+                            </div>
+                        </div>
+                        <!-- Table Parameter -->
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <table class="table table-bordered border-secondary">
+                                    <thead>
+                                        <tr class="table-light table-bordered border-secondary">
+                                            <th scope="col">Body</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>{</p>
+                                                <p class="px-5">
                                                     <label class="text-danger">"user_id"</label> : <label
-                                                        class="text-primary">"2"</label>,<br>
-                                                    <label class="text-danger">"thumbnail"</label> : <label
-                                                        class="text-primary">"this is thimbnail"</label>,<br>
-                                                    <label class="text-danger">"visibility"</label> : <label
-                                                        class="text-primary">"this is visibility"</label>,<br>
-                                                    <label class="text-danger">"is_top_course"</label> : <label
-                                                        class="text-primary">"this top course"</label>,<br>
-                                                    <label class="text-danger">"is_admin"</label> : <label
-                                                        class="text-primary">"1"</label>,<br>
-                                                    <label class="text-danger">"status_course"</label> : <label
-                                                        class="text-primary">"long"</label>,<br>
-                                                    <label class="text-danger">"course_overview_provider"</label> :
-                                                    <label class="text-primary">"overview provider"</label>,<br>
-                                                    <label class="text-danger">"meta_keyword"</label> : <label
-                                                        class="text-primary">"this is meta keyword"</label>,<br>
-                                                    <label class="text-danger">"meta_description"</label> : <label
-                                                        class="text-primary">"this is meta
-                                                        description"</label>,<br>
-                                                    <label class="text-danger">"is_free_course"</label> : <label
-                                                        class="text-primary">"1"</label>,<br>
-                                                    <label class="text-danger">"is_prakerja"</label> : <label
+                                                        class="text-primary">"127"</label>,<br>
+                                                    <label class="text-danger">"leader"</label> : <label
                                                         class="text-primary">"0"</label>,<br>
-                                                    <label class="text-danger">"instructor_revenue"</label> : <label
+                                                    <label class="text-danger">"co_leader"</label> : <label
+                                                        class="text-primary">"0"</label>,<br>
+                                                    <label class="text-danger">"code_reff"</label> : <label
+                                                        class="text-primary">"COBO2"</label>,<br>
+                                                    <label class="text-danger">"is_active"</label> : <label
                                                         class="text-primary">"1"</label>
                                                 </p>
                                                 <p>}</p>
@@ -481,7 +755,7 @@
                         <!-- End Table Response -->
 
                         <!-- Table Route -->
-                        <h5>Delete Data Dashboard Instructor :</h5>
+                        <h5>Delete Data Affiliate :</h5>
                         <table class="table table-bordered border-secondary">
                             <thead>
                                 <tr class="table-light table-bordered border-secondary">
@@ -493,7 +767,7 @@
                             <tbody>
                                 <tr>
                                     <td>DELETE</td>
-                                    <td>https://api.vocasia.pasia.id/instructor/dashboard-instructor/22</td>
+                                    <td>https://api.vocasia.pasia.id/admin/affiliate/258</td>
                                     <td>Json</td>
                                 </tr>
                             </tbody>
